@@ -1,0 +1,563 @@
+2021-04-01 08:03:29,767 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution started
+2021-04-01 08:03:29,851 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:03:29,851 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:03:29,851 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:03:29,852 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:03:29,852 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:03:29,856 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:03:29,859 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:03:29,878 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:03:29 ART 2021
+2021-04-01 08:03:29,878 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:03:29,904 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:03:29,905 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:03:29,905 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:03:29,905 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:03:29,911 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 3
+2021-04-01 08:03:29,912 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 3
+2021-04-01 08:03:29,912 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:03:29,917 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - All tickets processed!
+2021-04-01 08:03:29,917 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution terminated
+2021-04-01 08:05:57,488 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution started
+2021-04-01 08:05:57,509 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:05:57,509 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:05:57,509 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:05:57,510 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:05:57,510 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:05:57,515 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:05:57,517 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:05:57,518 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:05:57 ART 2021
+2021-04-01 08:05:57,518 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:05:57,565 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:05:57,565 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:05:57,565 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:05:57,565 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:05:57,589 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 2
+2021-04-01 08:05:57,590 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 2
+2021-04-01 08:05:57,590 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:05:57,606 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - User created
+2021-04-01 08:05:57,606 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Guest created
+2021-04-01 08:05:57,606 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:05:57,610 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:05:57,610 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:05:57 ART 2021
+2021-04-01 08:05:57,610 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:05:57,611 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:05:57,611 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:05:57,611 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:05:57,611 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:05:57,611 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:05:57,611 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 4
+2021-04-01 08:05:57,611 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 4
+2021-04-01 08:05:57,611 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:05:57,615 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:05:57,615 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:05:57,616 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:05:57 ART 2021
+2021-04-01 08:05:57,616 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:05:57,616 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:05:57,616 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:05:57,616 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:05:57,617 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:05:57,618 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 2
+2021-04-01 08:05:57,618 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 2
+2021-04-01 08:05:57,618 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:05:57,618 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - User created
+2021-04-01 08:05:57,619 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Guest created
+2021-04-01 08:05:57,619 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:05:57,619 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:05:57,619 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:05:57 ART 2021
+2021-04-01 08:05:57,619 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:05:57,620 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:05:57,620 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:05:57,620 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:05:57,620 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:05:57,621 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:05:57,621 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 2
+2021-04-01 08:05:57,621 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 2
+2021-04-01 08:05:57,621 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:05:57,621 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Check for cart
+2021-04-01 08:05:57,622 [main] ERROR com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - com.solvd.webOnlineShop.exceptions.NoObjectException: NoCartException occurred: Guest users don't have carts
+2021-04-01 08:05:57,623 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:05:57,623 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:05:57,623 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:05:57 ART 2021
+2021-04-01 08:05:57,623 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:05:57,623 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:05:57,624 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:05:57,624 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:05:57,624 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:05:57,624 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:05:57,624 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:05:57,625 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:05:57,625 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:05:57,625 [main] INFO  com.solvd.webOnlineShop.product.Product - Retrieving all products
+2021-04-01 08:05:57,668 [main] INFO  com.solvd.webOnlineShop.product.Product - Book, $ 5.99, description:'An excellent book
+2021-04-01 08:05:57,668 [main] INFO  com.solvd.webOnlineShop.product.Product - BookMarker, $ 0.99, description:'This is for books
+2021-04-01 08:05:57,668 [main] INFO  com.solvd.webOnlineShop.product.Product - Wallet, $ 1.99, description:'This is not for books
+2021-04-01 08:05:57,668 [main] INFO  com.solvd.webOnlineShop.product.Product - Shelves, $ 15.0, description:'This can be used for books
+2021-04-01 08:05:57,668 [main] INFO  com.solvd.webOnlineShop.product.Product - Lighter, $ 0.5, description:'This is definitely not for books
+2021-04-01 08:05:57,669 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:05:57,669 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:05:57,669 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:05:57 ART 2021
+2021-04-01 08:05:57,669 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:05:57,670 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:05:57,670 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:05:57,670 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:05:57,670 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:05:57,670 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:05:57,670 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:05:57,670 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:05:57,670 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.product.Product - Retrieving all products
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.product.Product - Book, $ 5.99, description:'An excellent book
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.product.Product - BookMarker, $ 0.99, description:'This is for books
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.product.Product - Wallet, $ 1.99, description:'This is not for books
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.product.Product - Shelves, $ 15.0, description:'This can be used for books
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.product.Product - Lighter, $ 0.5, description:'This is definitely not for books
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:05:57 ART 2021
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:05:57,671 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:05:57,674 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:05:57,674 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:05:57,674 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:05:57,674 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 4
+2021-04-01 08:05:57,674 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 4
+2021-04-01 08:05:57,675 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:05:57,675 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:05:57,675 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:05:57,675 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:05:57 ART 2021
+2021-04-01 08:05:57,675 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:05:57,675 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:05:57,677 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:05:57,677 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:05:57,677 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:05:57,677 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 3
+2021-04-01 08:05:57,678 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 3
+2021-04-01 08:05:57,678 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:05:57,685 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - All tickets processed!
+2021-04-01 08:05:57,685 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution terminated
+2021-04-01 08:06:26,593 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution started
+2021-04-01 08:06:26,601 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:26,601 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:26,601 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:26,601 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:26,601 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:26,603 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:06:26,603 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:26,604 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:26 ART 2021
+2021-04-01 08:06:26,604 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:26,626 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:06:26,626 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:06:26,626 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:06:26,627 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:06:26,633 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:06:26,633 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:06:26,634 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:26,637 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - Printing Login Menu
+2021-04-01 08:06:26,642 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:26,642 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:26 ART 2021
+2021-04-01 08:06:26,642 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:26,643 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- ENTER.
+2021-04-01 08:06:26,643 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- EXIT.
+2021-04-01 08:06:26,643 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 1
+2021-04-01 08:06:26,644 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 1
+2021-04-01 08:06:26,644 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:26,650 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:06:26,650 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:26,650 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:26 ART 2021
+2021-04-01 08:06:26,650 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:26,650 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:06:26,651 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:06:26,651 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:06:26,651 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:06:26,651 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 2
+2021-04-01 08:06:26,651 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 2
+2021-04-01 08:06:26,651 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:26,658 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - User created
+2021-04-01 08:06:26,658 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Guest created
+2021-04-01 08:06:26,658 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:06:26,659 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:26,660 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:26 ART 2021
+2021-04-01 08:06:26,660 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:26,660 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:06:26,660 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:06:26,660 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:06:26,660 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:06:26,660 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:06:26,660 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 1
+2021-04-01 08:06:26,661 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 1
+2021-04-01 08:06:26,661 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:26,663 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Starting search
+2021-04-01 08:06:26,664 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Search written by the dummy: bo
+2021-04-01 08:06:26,717 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Book, $ 5.99, description:'An excellent book
+2021-04-01 08:06:26,717 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - BookMarker, $ 0.99, description:'This is for books
+2021-04-01 08:06:26,717 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:06:26,718 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:26,718 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:26 ART 2021
+2021-04-01 08:06:26,718 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:26,718 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:06:26,718 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:06:26,718 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:06:26,718 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:06:26,718 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:06:26,718 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 2
+2021-04-01 08:06:26,718 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 2
+2021-04-01 08:06:26,719 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:26,719 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Check for cart
+2021-04-01 08:06:26,719 [main] ERROR com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - com.solvd.webOnlineShop.exceptions.NoObjectException: NoCartException occurred: Guest users don't have carts
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:26 ART 2021
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 3
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 3
+2021-04-01 08:06:26,720 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:26,722 [main] ERROR com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - com.solvd.webOnlineShop.exceptions.UserNotAdminException: UserNotAdminException Occurred: This user is not an admin.
+2021-04-01 08:06:26,722 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:06:26,722 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:26,723 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:26 ART 2021
+2021-04-01 08:06:26,723 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:26,723 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:06:26,724 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:06:26,724 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:06:26,724 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:06:26,724 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 3
+2021-04-01 08:06:26,724 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 3
+2021-04-01 08:06:26,724 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:26,726 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - All tickets processed!
+2021-04-01 08:06:26,727 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution terminated
+2021-04-01 08:06:39,657 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution started
+2021-04-01 08:06:39,669 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:39,669 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:39,669 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:39,669 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:39,669 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:39,672 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:06:39,673 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:39,674 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:39 ART 2021
+2021-04-01 08:06:39,675 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:39,689 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:06:39,689 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:06:39,689 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:06:39,689 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:06:39,693 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 2
+2021-04-01 08:06:39,693 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 2
+2021-04-01 08:06:39,693 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:39,700 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - User created
+2021-04-01 08:06:39,700 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Guest created
+2021-04-01 08:06:39,700 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:06:39,701 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:39,701 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:39 ART 2021
+2021-04-01 08:06:39,701 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:39,703 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:06:39,703 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:06:39,704 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:06:39,704 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:06:39,704 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:06:39,704 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 1
+2021-04-01 08:06:39,704 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 1
+2021-04-01 08:06:39,704 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:39,705 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Starting search
+2021-04-01 08:06:39,706 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Search written by the dummy: bo
+2021-04-01 08:06:39,752 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Book, $ 5.99, description:'An excellent book
+2021-04-01 08:06:39,752 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - BookMarker, $ 0.99, description:'This is for books
+2021-04-01 08:06:39,753 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:06:39,753 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:39,753 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:39 ART 2021
+2021-04-01 08:06:39,754 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:39,754 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:06:39,754 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:06:39,754 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:06:39,755 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:06:39,755 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:06:39,755 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 1
+2021-04-01 08:06:39,755 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 1
+2021-04-01 08:06:39,756 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:39,757 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Starting search
+2021-04-01 08:06:39,757 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Search written by the dummy: shelve
+2021-04-01 08:06:39,757 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Shelves, $ 15.0, description:'This can be used for books
+2021-04-01 08:06:39,758 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:06:39,758 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:39,758 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:39 ART 2021
+2021-04-01 08:06:39,758 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:39,759 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:06:39,759 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:06:39,759 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:06:39,759 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:06:39,759 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:06:39,760 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 4
+2021-04-01 08:06:39,761 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 4
+2021-04-01 08:06:39,769 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:39,772 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:06:39,773 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:39,774 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:39 ART 2021
+2021-04-01 08:06:39,774 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:39,775 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:06:39,775 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:06:39,775 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:06:39,776 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:06:39,776 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 1
+2021-04-01 08:06:39,777 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 1
+2021-04-01 08:06:39,779 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:39,780 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.CreateUser - Printing Create User Menu
+2021-04-01 08:06:39,782 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:39,782 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:39 ART 2021
+2021-04-01 08:06:39,782 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:39,783 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- ENTER.
+2021-04-01 08:06:39,783 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- EXIT.
+2021-04-01 08:06:39,783 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:06:39,783 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:06:39,800 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:39,803 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - User created
+2021-04-01 08:06:39,807 [main] INFO  com.solvd.webOnlineShop.payment.Cart - New cart created
+2021-04-01 08:06:39,808 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: asdasd
+2021-04-01 08:06:39,808 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: asdasd
+2021-04-01 08:06:39,808 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: asdasd
+2021-04-01 08:06:39,809 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Email written by the dummy: sansan@com
+2021-04-01 08:06:39,841 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - User created.
+2021-04-01 08:06:39,843 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - All tickets processed!
+2021-04-01 08:06:39,844 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution terminated
+2021-04-01 08:06:49,995 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution started
+2021-04-01 08:06:50,004 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:50,004 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:50,005 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:50,005 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:50,005 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:50,006 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:06:50,007 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:50,008 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:50 ART 2021
+2021-04-01 08:06:50,008 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:50,023 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:06:50,023 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:06:50,023 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:06:50,023 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:06:50,028 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 1
+2021-04-01 08:06:50,030 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 1
+2021-04-01 08:06:50,030 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:50,034 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.CreateUser - Printing Create User Menu
+2021-04-01 08:06:50,035 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:50,035 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:50 ART 2021
+2021-04-01 08:06:50,036 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:50,037 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- ENTER.
+2021-04-01 08:06:50,038 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- EXIT.
+2021-04-01 08:06:50,038 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 1
+2021-04-01 08:06:50,038 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 1
+2021-04-01 08:06:50,039 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:50,041 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:06:50,041 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:50,041 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:50 ART 2021
+2021-04-01 08:06:50,041 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:50,041 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:06:50,041 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:06:50,042 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:06:50,042 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:06:50,043 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 3
+2021-04-01 08:06:50,043 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 3
+2021-04-01 08:06:50,043 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:50,045 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - All tickets processed!
+2021-04-01 08:06:50,045 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution terminated
+2021-04-01 08:06:58,392 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution started
+2021-04-01 08:06:58,406 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:58,406 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:58,406 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:58,406 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:58,406 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:06:58,409 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:06:58,410 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:06:58,411 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:06:58 ART 2021
+2021-04-01 08:06:58,412 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:06:58,432 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:06:58,432 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:06:58,432 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:06:58,433 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:06:58,439 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 3
+2021-04-01 08:06:58,439 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 3
+2021-04-01 08:06:58,440 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:06:58,444 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - All tickets processed!
+2021-04-01 08:06:58,444 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution terminated
+2021-04-01 08:07:05,952 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution started
+2021-04-01 08:07:05,966 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:07:05,966 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:07:05,966 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:07:05,967 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:07:05,967 [main] INFO  com.solvd.webOnlineShop.product.Product - New product created
+2021-04-01 08:07:05,970 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:07:05,972 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:05,973 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:05 ART 2021
+2021-04-01 08:07:05,974 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,000 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:07:06,000 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:07:06,000 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:07:06,000 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:07:06,007 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 2
+2021-04-01 08:07:06,009 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 2
+2021-04-01 08:07:06,009 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,018 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - User created
+2021-04-01 08:07:06,019 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Guest created
+2021-04-01 08:07:06,019 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:07:06,020 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,021 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,022 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,023 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:07:06,024 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:07:06,025 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:07:06,025 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:07:06,025 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:07:06,025 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:07:06,025 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:07:06,026 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,029 [main] INFO  com.solvd.webOnlineShop.product.Product - Retrieving all products
+2021-04-01 08:07:06,082 [main] INFO  com.solvd.webOnlineShop.product.Product - Book, $ 5.99, description:'An excellent book
+2021-04-01 08:07:06,083 [main] INFO  com.solvd.webOnlineShop.product.Product - BookMarker, $ 0.99, description:'This is for books
+2021-04-01 08:07:06,083 [main] INFO  com.solvd.webOnlineShop.product.Product - Wallet, $ 1.99, description:'This is not for books
+2021-04-01 08:07:06,083 [main] INFO  com.solvd.webOnlineShop.product.Product - Shelves, $ 15.0, description:'This can be used for books
+2021-04-01 08:07:06,083 [main] INFO  com.solvd.webOnlineShop.product.Product - Lighter, $ 0.5, description:'This is definitely not for books
+2021-04-01 08:07:06,083 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:07:06,083 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,084 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,084 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,084 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:07:06,084 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:07:06,084 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:07:06,084 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:07:06,084 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:07:06,084 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:07:06,084 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:07:06,085 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,085 [main] INFO  com.solvd.webOnlineShop.product.Product - Retrieving all products
+2021-04-01 08:07:06,085 [main] INFO  com.solvd.webOnlineShop.product.Product - Book, $ 5.99, description:'An excellent book
+2021-04-01 08:07:06,086 [main] INFO  com.solvd.webOnlineShop.product.Product - BookMarker, $ 0.99, description:'This is for books
+2021-04-01 08:07:06,089 [main] INFO  com.solvd.webOnlineShop.product.Product - Wallet, $ 1.99, description:'This is not for books
+2021-04-01 08:07:06,089 [main] INFO  com.solvd.webOnlineShop.product.Product - Shelves, $ 15.0, description:'This can be used for books
+2021-04-01 08:07:06,089 [main] INFO  com.solvd.webOnlineShop.product.Product - Lighter, $ 0.5, description:'This is definitely not for books
+2021-04-01 08:07:06,089 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:07:06,089 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,089 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,089 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,089 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:07:06,090 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:07:06,090 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:07:06,090 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:07:06,090 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:07:06,090 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 1
+2021-04-01 08:07:06,090 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 1
+2021-04-01 08:07:06,091 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,091 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Starting search
+2021-04-01 08:07:06,091 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Search written by the dummy: shelve
+2021-04-01 08:07:06,093 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Shelves, $ 15.0, description:'This can be used for books
+2021-04-01 08:07:06,093 [main] INFO  com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - Printing Shop Menu
+2021-04-01 08:07:06,093 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,093 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,093 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,093 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- SEE_PRODUCTS.
+2021-04-01 08:07:06,094 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- SEARCH_PRODUCTS.
+2021-04-01 08:07:06,094 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- SEE_CART.
+2021-04-01 08:07:06,094 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- ADMIN_OPTIONS.
+2021-04-01 08:07:06,094 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 4- CLOSE_SESSION.
+2021-04-01 08:07:06,094 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 3
+2021-04-01 08:07:06,094 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 3
+2021-04-01 08:07:06,094 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,098 [main] ERROR com.solvd.webOnlineShop.ui.menu.shopMenu.ShopMenu - com.solvd.webOnlineShop.exceptions.UserNotAdminException: UserNotAdminException Occurred: This user is not an admin.
+2021-04-01 08:07:06,098 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:07:06,098 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,099 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,099 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,099 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:07:06,099 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:07:06,099 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:07:06,099 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:07:06,099 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:07:06,099 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:07:06,099 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,101 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - Printing Login Menu
+2021-04-01 08:07:06,102 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,102 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,102 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,103 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- ENTER.
+2021-04-01 08:07:06,103 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- EXIT.
+2021-04-01 08:07:06,103 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:07:06,103 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:07:06,103 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,105 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - entered in validate user
+2021-04-01 08:07:06,105 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: 123123
+2021-04-01 08:07:06,106 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: asdasd
+2021-04-01 08:07:06,106 [main] WARN  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - No user found in matching
+2021-04-01 08:07:06,106 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - Printing Login Menu
+2021-04-01 08:07:06,107 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,107 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,107 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,107 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- ENTER.
+2021-04-01 08:07:06,107 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- EXIT.
+2021-04-01 08:07:06,107 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:07:06,107 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:07:06,107 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,107 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - entered in validate user
+2021-04-01 08:07:06,108 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: sansan
+2021-04-01 08:07:06,108 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: 123123
+2021-04-01 08:07:06,109 [main] WARN  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - No user found in matching
+2021-04-01 08:07:06,109 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - Printing Login Menu
+2021-04-01 08:07:06,109 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,109 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,109 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,109 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- ENTER.
+2021-04-01 08:07:06,109 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- EXIT.
+2021-04-01 08:07:06,109 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:07:06,109 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:07:06,111 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,111 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - entered in validate user
+2021-04-01 08:07:06,111 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: sansan
+2021-04-01 08:07:06,111 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: asdasd
+2021-04-01 08:07:06,111 [main] WARN  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - No user found in matching
+2021-04-01 08:07:06,112 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - Printing Login Menu
+2021-04-01 08:07:06,112 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,112 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,112 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,112 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- ENTER.
+2021-04-01 08:07:06,112 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- EXIT.
+2021-04-01 08:07:06,112 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:07:06,112 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - entered in validate user
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: sansan
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: sansan
+2021-04-01 08:07:06,113 [main] WARN  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - No user found in matching
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - Printing Login Menu
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- ENTER.
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- EXIT.
+2021-04-01 08:07:06,113 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 0
+2021-04-01 08:07:06,114 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 0
+2021-04-01 08:07:06,114 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,114 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - entered in validate user
+2021-04-01 08:07:06,114 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: 123123
+2021-04-01 08:07:06,114 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Input written by the dummy: sansan
+2021-04-01 08:07:06,114 [main] WARN  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - No user found in matching
+2021-04-01 08:07:06,114 [main] INFO  com.solvd.webOnlineShop.ui.menu.usersMenu.Login - Printing Login Menu
+2021-04-01 08:07:06,114 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,114 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,114 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,114 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- ENTER.
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- EXIT.
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 1
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 1
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Printing Main Menu
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Choosing Menu ui options
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Clock: Thu Apr 01 08:07:06 ART 2021
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Giving all elements options
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 0- LOGIN.
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 1- CREATE_USER.
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 2- ENTER_GUEST.
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - 3- EXIT.
+2021-04-01 08:07:06,115 [main] INFO  com.solvd.webOnlineShop.GenerateRandomData - Number written by the dummy(Bounded): 3
+2021-04-01 08:07:06,116 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Chosen option: 3
+2021-04-01 08:07:06,116 [main] INFO  com.solvd.webOnlineShop.generics.AbstractMenu - Option selected in changeOption: 
+2021-04-01 08:07:06,119 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - All tickets processed!
+2021-04-01 08:07:06,119 [main] INFO  com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu - Execution terminated
