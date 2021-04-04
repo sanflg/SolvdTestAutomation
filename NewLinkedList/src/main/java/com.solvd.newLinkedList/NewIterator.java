@@ -11,7 +11,6 @@ class NewIterator<E> implements ListIterator<E> {
     private Node<E> next;
     private NewLinkedList<E> linkedList;
     private int nextIndex;
-    private int expectedModCount = linkedList.modCount();
 
     NewIterator(int index, NewLinkedList<E> linkedList) {
         this.linkedList = linkedList;
@@ -24,7 +23,6 @@ class NewIterator<E> implements ListIterator<E> {
     }
 
     public E next() {
-        checkForComodification();
         if (!hasNext())
             throw new NoSuchElementException();
 
@@ -39,7 +37,6 @@ class NewIterator<E> implements ListIterator<E> {
     }
 
     public E previous() {
-        checkForComodification();
         if (!hasPrevious())
             throw new NoSuchElementException();
 
@@ -57,7 +54,6 @@ class NewIterator<E> implements ListIterator<E> {
     }
 
     public void remove() {
-        checkForComodification();
         if (lastReturned == null)
             throw new IllegalStateException();
 
@@ -68,40 +64,31 @@ class NewIterator<E> implements ListIterator<E> {
         else
             nextIndex--;
         lastReturned = null;
-        expectedModCount++;
     }
 
     public void set(E e) {
         if (lastReturned == null)
             throw new IllegalStateException();
-        checkForComodification();
         lastReturned.item = e;
     }
 
     public void add(E e) {
-        checkForComodification();
         lastReturned = null;
         if (next == null)
             linkedList.addLast(e);
         else
             linkedList.linkBefore(e, next);
         nextIndex++;
-        expectedModCount++;
     }
 
     public void forEachRemaining(Consumer<? super E> action) {
         Objects.requireNonNull(action);
-        while (linkedList.modCount() == expectedModCount && nextIndex < linkedList.size()) {
+        while (nextIndex < linkedList.size()) {
             action.accept(next.item);
             lastReturned = next;
             next = next.next;
             nextIndex++;
         }
-        checkForComodification();
     }
 
-    final void checkForComodification() {
-        if (linkedList.modCount() != expectedModCount)
-            throw new ConcurrentModificationException();
-    }
 }

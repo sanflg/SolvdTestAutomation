@@ -1,6 +1,7 @@
 package com.solvd.newLinkedList;
 
 import java.util.*;
+import java.util.function.Consumer;
 
 public class NewLinkedList<E> extends AbstractList<E> implements List<E>
 {
@@ -108,8 +109,6 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
         return element;
     }
 
-
-
     public E removeFirst() {
         final Node<E> f = first;
         if (f == null)
@@ -169,6 +168,11 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
             }
         }
         return false;
+    }
+
+    public boolean addAll(Collection<? extends E> c){
+        addAll(size, c);
+        return true;
     }
 
     public boolean addAll(int index, Collection<? extends E> c) {
@@ -265,8 +269,23 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
         return x;
     }
 
-    public ListIterator<E> listIterator(int index) {
+    public NewIterator<E> listIterator(int index) {
         checkPositionIndex(index);
         return new NewIterator<E>(index, this);
+    }
+
+    public NewIterator<E> listIterator() {
+        checkPositionIndex(size);
+        return new NewIterator<E>(size, this);
+    }
+
+    public NewDescendingIterator<E> descendingIterator(int index) {
+        checkPositionIndex(index);
+        return new NewDescendingIterator<>(index,this);
+    }
+
+    public NewDescendingIterator<E> descendingIterator() {
+        checkPositionIndex(size);
+        return new NewDescendingIterator<>(size,this);
     }
 }
