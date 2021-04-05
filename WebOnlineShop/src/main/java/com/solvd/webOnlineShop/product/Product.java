@@ -7,7 +7,7 @@ import com.solvd.webOnlineShop.generics.AbstractDAO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Date;
+
 import java.util.Objects;
 
 public class Product implements AbstractDAO<Product, String> {
@@ -17,8 +17,6 @@ public class Product implements AbstractDAO<Product, String> {
     private String name;
     private float price;
     private String description;
-    private final Date creationDate = new Date();
-    private Date lastUpdate;
 
     public Product(String name, float price, String description) {
         this.name = name;
@@ -50,14 +48,6 @@ public class Product implements AbstractDAO<Product, String> {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Date getLastUpdate() {
-        return lastUpdate;
-    }
-
-    public void setLastUpdate(Date lastUpdate) {
-        this.lastUpdate = lastUpdate;
     }
 
     @Override

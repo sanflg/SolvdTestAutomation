@@ -1,6 +1,7 @@
 package com.solvd.webOnlineShop.payment;
 
 import com.solvd.webOnlineShop.DatabaseSimulation;
+import com.solvd.webOnlineShop.lambda.IShowDate;
 import com.solvd.webOnlineShop.product.Product;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -42,7 +43,8 @@ public class Ticket {
     }
 
     public String getStringDate(){
-        return getDate().toString();
+        IShowDate stringDate = Date::toString;
+        return stringDate.showDate(getDate());
     }
 
     @Override

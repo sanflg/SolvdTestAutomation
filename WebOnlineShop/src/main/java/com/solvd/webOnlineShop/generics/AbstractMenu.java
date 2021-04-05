@@ -1,5 +1,7 @@
 package com.solvd.webOnlineShop.generics;
 
+import com.solvd.webOnlineShop.lambda.IRegexCompare;
+import com.solvd.webOnlineShop.lambda.IShowDate;
 import com.solvd.webOnlineShop.ui.IUi;
 import com.solvd.webOnlineShop.user.registeredUser.CustomerTester;
 
@@ -8,16 +10,25 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public abstract class AbstractMenu<T extends Enum<T>> implements IUi<T> {
     private static final Logger logger = LogManager.getLogger(AbstractMenu.class);
     private final Date clock = new Date();
 
+    private static IRegexCompare regex = ((pattern, input) -> {
+        Pattern p = Pattern.compile(pattern);
+        Matcher m = p.matcher(input);
+        return m.matches();});
+
     public void printAllElements(Class<T> options){
-        logger.info("Clock: " + clock.toString());
+
+        IShowDate stringDate = Date::toString;
+
+        logger.info("Clock: " + stringDate.showDate(clock));
         logger.info("Giving all elements options");
-        Arrays.stream(options.getEnumConstants()).forEach(option->logger.info(option.ordinal() + "- " + option + "."));
+        Arrays.stream(options.getEnumConstants()).forEach(option->logger.info(option.ordinal() + "- " + option.toString() + "."));
     }
 
     @Override
@@ -37,8 +48,8 @@ public abstract class AbstractMenu<T extends Enum<T>> implements IUi<T> {
 
         logger.info("Chosen option: " + Integer.parseInt(chosenOption));
 
-        Pattern patter = Pattern.compile("[0-9]+");
-        if (!patter.matcher(chosenOption).matches()) {
+        String pattern = "[0-9]+";
+        if (!regex.validateInput(pattern, chosenOption)) {
             logger.warn("No natural number entered in Menu options");
             return manageOptions(options);
         }

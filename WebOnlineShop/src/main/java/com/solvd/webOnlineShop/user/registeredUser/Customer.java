@@ -5,6 +5,7 @@ import com.solvd.webOnlineShop.GenerateRandomData;
 import com.solvd.webOnlineShop.Main;
 import com.solvd.webOnlineShop.exceptions.UserAlreadyExistException;
 import com.solvd.webOnlineShop.generics.AbstractDAO;
+import com.solvd.webOnlineShop.lambda.IRegexCompare;
 import com.solvd.webOnlineShop.payment.Cart;
 import com.solvd.webOnlineShop.user.AbstractUser;
 
@@ -14,7 +15,6 @@ import org.apache.logging.log4j.Logger;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Date;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -28,8 +28,11 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
     private String password;
     private String name;
     private String email;
-    private final Date creationDate = new Date();
-    private Date lastUpdate;
+
+    private static IRegexCompare regex = ((pattern, input) -> {
+            Pattern p = Pattern.compile(pattern);
+            Matcher m = p.matcher(input);
+            return m.matches();});
 
     public Customer() {
         this.userName = getUserNameAndCheckIt();
@@ -113,21 +116,9 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
         this.email = email;
     }
 
-    public Date getCreationDate() {
-        return creationDate;
-    }
-
-    public Date getLastUpdate() {
-        return lastUpdate;
-    }
-
-    public void setLastUpdate(Date lastUpdate) {
-        this.lastUpdate = lastUpdate;
-    }
-
     //General checks for all fields
     
-    static public String writeInput(Pattern pattern, String message){
+    static public String writeInput(String pattern, String message){
 
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
         String input;
@@ -137,7 +128,8 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
             logger.error(e);
             input = writeInput(pattern, message);
         }
-        boolean inputIsLegal = checkPatternAndMatcherRegex(input, pattern);
+
+        boolean inputIsLegal = regex.validateInput(pattern, input);
 
         if (!inputIsLegal){
             logger.warn("Illegal input: " + message);
@@ -146,13 +138,8 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
         return input;
     }
 
-    public static boolean checkPatternAndMatcherRegex(String string, Pattern pattern){
-        Matcher m = pattern.matcher(string);
-        return m.matches();
-    }
-
     public static String writeAlphaNumeric(String message) {
-        Pattern pattern = Pattern.compile("[a-zA-Z0-9]+");
+        String pattern = "[a-zA-Z0-9]+";
         if(Main.isIsDummyOn()){
             return CustomerTester.generateRandomInput();
         }else{
@@ -161,7 +148,7 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
     }
 
     static public String writeAlphabetical(String message) {
-        Pattern pattern = Pattern.compile("[a-zA-Z]+");
+        String pattern = "[a-zA-Z]+";
         if(Main.isIsDummyOn()){
             return CustomerTester.generateRandomInput();
         }else{
@@ -171,7 +158,7 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
 
     static public String writeEmail() {
         String message = "Enter a valid Email: ";
-        Pattern pattern = Pattern.compile("^(.+)@(.+)");
+        String pattern = "^(.+)@(.+)";
         if(Main.isIsDummyOn()){
             return CustomerTester.generateRandomEmail();
         }else{
@@ -181,7 +168,7 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
 
     static public String writeNumeric(){
         String message = "Enter a valid Email: ";
-        Pattern pattern = Pattern.compile("[0-9]+");
+        String pattern = "[0-9]+";
         if(Main.isIsDummyOn()){
             return CustomerTester.generateRandomEmail();
         }else{

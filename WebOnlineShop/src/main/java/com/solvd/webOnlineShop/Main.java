@@ -1,5 +1,6 @@
 package com.solvd.webOnlineShop;
 
+import com.solvd.webOnlineShop.lambda.IGetValue;
 import com.solvd.webOnlineShop.payment.Ticket;
 import com.solvd.webOnlineShop.ui.menu.mainMenu.MainMenu;
 import com.solvd.webOnlineShop.user.registeredUser.CustomerTester;

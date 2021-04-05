@@ -1,6 +1,6 @@
 package com.solvd.webOnlineShop.ui;
 
-public interface IUi<T> {
+public interface IUi<T extends Enum<T>> {
 
     int NUMBER = 0;
 

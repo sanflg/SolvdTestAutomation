@@ -1,5 +1,6 @@
 package com.solvd.webOnlineShop.generics;
 
+import com.solvd.webOnlineShop.lambda.IRegexCompare;
 import com.solvd.webOnlineShop.user.registeredUser.CustomerTester;
 
 import org.apache.logging.log4j.LogManager;
@@ -7,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Collection;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public abstract class
@@ -14,6 +16,11 @@ public abstract class
     extends AbstractMenu<T>{
 
     private static final Logger logger = LogManager.getLogger(AbstractMenuCollections.class);
+
+    private static IRegexCompare regex = ((pattern, input) -> {
+        Pattern p = Pattern.compile(pattern);
+        Matcher m = p.matcher(input);
+        return m.matches();});
 
     public void printAllElementsCollection(L options){
         logger.info("Giving all elements options with String[] parameter");
@@ -30,8 +37,8 @@ public abstract class
 
         int newOption;
 
-        Pattern patter = Pattern.compile("[0-9]+");
-        if (!patter.matcher(chosenOption).matches()){
+        String pattern = "[0-9]+";
+        if (!regex.validateInput(pattern, chosenOption)){
             logger.warn("No natural number entered in Menu options");
             newOption = manageOptionsCollection(options);
         }else{
