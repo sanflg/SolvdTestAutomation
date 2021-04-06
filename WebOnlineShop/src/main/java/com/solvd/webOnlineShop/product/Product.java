@@ -77,7 +77,7 @@ public class Product implements AbstractDAO<Product, String> {
         if(DatabaseSimulation.getProductList().size() == 0){
             throw new NoProductsException("NoProductsException Occurred: ");
         }
-        DatabaseSimulation.getProductList().forEach(product -> {logger.info(product.toString());});
+        DatabaseSimulation.getProductList().forEach(product -> logger.info(product.toString()));
     }
 
     @Override

@@ -28,8 +28,8 @@ public abstract class AbstractMenu<T extends Enum<T>> implements IUi<T> {
 
         logger.info("Clock: " + stringDate.showDate(clock));
         logger.info("Giving all elements options");
-        Arrays.stream(options.getEnumConstants()).forEach(option->logger.info(option.ordinal() + "- " + option.toString() + "."));
-    }
+        Arrays.stream(options.getEnumConstants()).forEach(option->
+            logger.info(option.ordinal() + "- " + option.toString() + "."));}
 
     @Override
     public T changeOption(Class<T> options) {

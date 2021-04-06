@@ -2,7 +2,8 @@
 3 lambdas
 
 NoUrgentes:
--1-arreglar for de customer
+-1-arreglar for de customer VER ESTA IMPLEMENTACION
+
 0- agregar en admin user el creado de productos
 1- add update method to product and user
 3- agregar edicion de usuarios y productos

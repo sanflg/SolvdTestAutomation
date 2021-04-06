@@ -33,10 +33,10 @@ public class Main {
         LinkedList<Ticket> ticketList = (LinkedList<Ticket>) DatabaseSimulation.getTicketList();
 
         if(CustomerTester.generateTicketOption() == 1){
-            DatabaseSimulation.getTicketList().forEach(
-                t->{logger.info("Ticket processed: " + ticketList.removeFirst().toString());});}
-        else{ticketList.descendingIterator().forEachRemaining(
-            ticket->{logger.info("Ticket processed: " + ticketList.removeLast().toString());});}
+            DatabaseSimulation.getTicketList().forEach(t->
+            logger.info("Ticket processed: " + ticketList.removeFirst().toString()));}
+        else{ticketList.descendingIterator().forEachRemaining(ticket->
+            logger.info("Ticket processed: " + ticketList.removeLast().toString()));}
 
         logger.info("All tickets processed!");
     }

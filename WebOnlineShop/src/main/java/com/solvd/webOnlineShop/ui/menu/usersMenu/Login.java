@@ -59,18 +59,16 @@ public class Login extends AbstractMenu<EnterDataEnum> {
             password = Customer.writeAlphaNumeric("Password (Only letters and numbers, without spaces): ");
         }
 
-        Customer getUser = null;
+        var wrapper = new Object(){ Customer userExist; };
 
-        for (Customer user : DatabaseSimulation.getUsersSet()) {
-            if (userName.equals(user.getUserName()) && password.equals(user.getPassword())) {
-                logger.info("Correctly logged");
-                getUser = user;
-            }
-        }
-        if (getUser == null){
+        DatabaseSimulation.getUsersSet().forEach(user->{
+            if (userName.equals(user.getUserName()) && password.equals(user.getPassword())) wrapper.userExist=user;});
+
+        if (wrapper.userExist == null){
             throw new NoObjectException("NoUserFoundException occurred: ");
         }else{
-            return getUser;
+            logger.info("Correctly logged");
+            return wrapper.userExist;
         }
     }
 }
