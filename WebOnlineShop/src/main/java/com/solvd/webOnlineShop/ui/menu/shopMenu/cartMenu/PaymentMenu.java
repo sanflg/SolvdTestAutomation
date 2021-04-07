@@ -24,8 +24,7 @@ public class PaymentMenu extends AbstractMenu<PaymentEnum>  {
         PaymentEnum option = changeOption(PaymentEnum.class);
         manageCases(option);
         Ticket newTicket = new Ticket((ArrayList<Product>) cart.getCartProductsList());
-        newTicket.printMe();
-        cart.setCartProductsList(new ArrayList<>());
+        newTicket.printMe();        cart.setCartProductsList(new ArrayList<>());
         logger.info("Cart cleared of products");
     }
 
