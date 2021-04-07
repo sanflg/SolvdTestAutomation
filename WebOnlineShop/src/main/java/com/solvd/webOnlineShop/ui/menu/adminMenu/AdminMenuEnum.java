@@ -7,7 +7,7 @@ public enum AdminMenuEnum implements IMenuEnum {
     CREATE_PRODUCT("Create a new Product"),
     EXIT("Exit");
 
-    private String value;
+    private final String value;
 
     AdminMenuEnum(String value) {
         this.value = value;

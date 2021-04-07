@@ -4,5 +4,4 @@ public interface Payable {
     int MULTIPLY = 3;
 
     void payMe();
-
 }

@@ -4,7 +4,6 @@ import com.solvd.webOnlineShop.DatabaseSimulation;
 import com.solvd.webOnlineShop.GenerateRandomData;
 import com.solvd.webOnlineShop.Main;
 import com.solvd.webOnlineShop.exceptions.UserAlreadyExistException;
-import com.solvd.webOnlineShop.generics.AbstractDAO;
 import com.solvd.webOnlineShop.lambda.IRegexCompare;
 import com.solvd.webOnlineShop.payment.Cart;
 import com.solvd.webOnlineShop.user.AbstractUser;
@@ -15,21 +14,23 @@ import org.apache.logging.log4j.Logger;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Date;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Customer extends AbstractUser implements AbstractDAO<Customer, String> {
+public class Customer extends AbstractUser {
     private static final Logger logger = LogManager.getLogger(GenerateRandomData.class);
-    private final static int DIFFERENCE = 1;
     private final Cart cart = new Cart();
     private String creationCode;
     private String userName;
     private String password;
     private String name;
     private String email;
+    private final Date creationDate = new Date();
+    private Date lastUpdate = new Date();
 
-    private static IRegexCompare regex = ((pattern, input) -> {
+    private final static IRegexCompare regex = ((pattern, input) -> {
             Pattern p = Pattern.compile(pattern);
             Matcher m = p.matcher(input);
             return m.matches();});
@@ -40,7 +41,7 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
         this.name = writeAlphabetical("Name (Only letters and spaces): ");
         this.email = writeEmail();
         this.creationCode = userName + password + name + email;
-        save(this);
+        CustomerDAO.getCustomerDAO().save(this);
         logger.info("User created.");
     }
 
@@ -55,16 +56,17 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
     }
 
     @Override
-    public boolean equals(Object compareUser) {
-        if (this == compareUser) return true;
-        if (compareUser == null || getClass() != compareUser.getClass()) return false;
-        Customer that = (Customer) compareUser;
-        return getCart().equals(that.getCart()) && getCreationCode().equals(that.getCreationCode());
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Customer customer = (Customer) o;
+        return getCreationCode().equals(customer.getCreationCode()) && getCreationDate().equals(customer.getCreationDate());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCart(), getCreationCode()) + DIFFERENCE;
+        return Objects.hash(super.hashCode(), getCreationCode(), getCreationDate());
     }
 
     @Override
@@ -114,6 +116,18 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public Date getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(Date lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 
     //General checks for all fields
@@ -166,16 +180,6 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
         }
     }
 
-    static public String writeNumeric(){
-        String message = "Enter a valid Email: ";
-        String pattern = "[0-9]+";
-        if(Main.isIsDummyOn()){
-            return CustomerTester.generateRandomEmail();
-        }else{
-            return writeInput(pattern, message);
-        }
-    }
-
     public String getUserNameAndCheckIt(){
         String userName;
 
@@ -195,16 +199,6 @@ public class Customer extends AbstractUser implements AbstractDAO<Customer, Stri
             throw new UserAlreadyExistException("UserAlreadyExistException Occurred: ");
         }
         return userName;
-    }
-
-    @Override
-    public void save(Customer user) {
-        DatabaseSimulation.getUsersSet().add(user);
-    }
-
-    @Override
-    public void remove(Customer user) {
-        DatabaseSimulation.getUsersSet().remove(user);
     }
 }
 

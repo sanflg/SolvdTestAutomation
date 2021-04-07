@@ -9,7 +9,7 @@ public enum ShopMenuEnum implements IMenuEnum {
     ADMIN_OPTIONS("Admin Options"),
     CLOSE_SESSION("Close Session");
 
-    private String value;
+    private final String value;
 
     ShopMenuEnum(String value) {
         this.value = value;

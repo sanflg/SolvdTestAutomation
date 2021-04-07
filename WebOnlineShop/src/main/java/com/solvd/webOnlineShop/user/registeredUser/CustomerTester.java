@@ -2,7 +2,6 @@ package com.solvd.webOnlineShop.user.registeredUser;
 
 import com.solvd.webOnlineShop.DatabaseSimulation;
 import com.solvd.webOnlineShop.GenerateRandomData;
-import com.solvd.webOnlineShop.Main;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

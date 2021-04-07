@@ -17,7 +17,7 @@ public abstract class AbstractMenu<T extends Enum<T>> implements IUi<T> {
     private static final Logger logger = LogManager.getLogger(AbstractMenu.class);
     private final Date clock = new Date();
 
-    private static IRegexCompare regex = ((pattern, input) -> {
+    private final static IRegexCompare regex = ((pattern, input) -> {
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(input);
         return m.matches();});

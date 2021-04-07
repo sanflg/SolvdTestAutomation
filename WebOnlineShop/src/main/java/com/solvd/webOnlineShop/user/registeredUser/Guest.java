@@ -7,7 +7,6 @@ import org.apache.logging.log4j.Logger;
 
 public class Guest extends AbstractUser {
     private static final Logger logger = LogManager.getLogger(GenerateRandomData.class);
-    private static final int DIFFERENCE = 3;
 
     public Guest() {
         super();

@@ -9,7 +9,6 @@ import java.util.Objects;
 
 public abstract class AbstractUser{
     private static final Logger logger = LogManager.getLogger(GenerateRandomData.class);
-    private static int DIFFERENCE;
 
     private String userName;
     private String password;
@@ -53,10 +52,6 @@ public abstract class AbstractUser{
         this.email = email;
     }
 
-    public static int getDIFFERENCE() {
-        return DIFFERENCE;
-    }
-
     @Override
     public boolean equals(Object compareUser) {
         if (this == compareUser) return true;
@@ -67,7 +62,7 @@ public abstract class AbstractUser{
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getEmail()) + DIFFERENCE;
+        return Objects.hash(getName(), getEmail());
     }
 
     @Override

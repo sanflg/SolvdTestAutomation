@@ -5,6 +5,4 @@ import org.apache.logging.log4j.Logger;
 
 public class Credit extends AbstractCard {
     private static final Logger logger = LogManager.getLogger(Credit.class);
-    private final int DIFFERENCE = 1;
-
 }

@@ -17,7 +17,7 @@ public abstract class
 
     private static final Logger logger = LogManager.getLogger(AbstractMenuCollections.class);
 
-    private static IRegexCompare regex = ((pattern, input) -> {
+    private final static IRegexCompare regex = ((pattern, input) -> {
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(input);
         return m.matches();});

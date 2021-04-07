@@ -1,28 +1,31 @@
 package com.solvd.webOnlineShop.product;
 
 import com.solvd.webOnlineShop.DatabaseSimulation;
-import com.solvd.webOnlineShop.exceptions.NoObjectException;
 import com.solvd.webOnlineShop.exceptions.NoProductsException;
-import com.solvd.webOnlineShop.generics.AbstractDAO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
+import java.util.Date;
 import java.util.Objects;
 
-public class Product implements AbstractDAO<Product, String> {
+public class Product {
     private static final Logger logger = LogManager.getLogger(Product.class);
 
     private static final int DIFFERENCE = 5;
+    private final String creationCode;
     private String name;
     private float price;
     private String description;
+    private final Date creationDate = new Date();
+    private Date lastUpdate = new Date();
 
     public Product(String name, float price, String description) {
         this.name = name;
         this.price = price;
         this.description = description;
-        DatabaseSimulation.getProductList().add(this);
+        this.creationCode = name + description;
+        ProductDAO.getProductDAO().save(this);
         logger.info("New product created");
     }
 
@@ -50,17 +53,33 @@ public class Product implements AbstractDAO<Product, String> {
         this.description = description;
     }
 
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public Date getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(Date lastUpdate) {
+        this.lastUpdate = lastUpdate;
+    }
+
+    public String getCreationCode() {
+        return creationCode;
+    }
+
     @Override
-    public boolean equals(Object newProduct) {
-        if (this == newProduct) return true;
-        if (newProduct == null || getClass() != newProduct.getClass()) return false;
-        Product product = (Product) newProduct;
-        return Float.compare(product.getPrice(), getPrice()) == 0 && getName().equals(product.getName());
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return getCreationCode().equals(product.getCreationCode()) && getCreationDate().equals(product.getCreationDate());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getPrice()) + DIFFERENCE;
+        return Objects.hash(getCreationCode(), getCreationDate());
     }
 
     @Override
@@ -78,18 +97,5 @@ public class Product implements AbstractDAO<Product, String> {
             throw new NoProductsException("NoProductsException Occurred: ");
         }
         DatabaseSimulation.getProductList().forEach(product -> logger.info(product.toString()));
-    }
-
-    @Override
-    public void save(Product product) {
-        DatabaseSimulation.getProductList().add(product);
-    }
-
-    @Override
-    public void remove(Product product) throws NoObjectException{
-        if (DatabaseSimulation.getProductList().contains(product)){
-            DatabaseSimulation.getProductList().remove(product);
-        }
-        throw new NoObjectException("NoObjectException Occurred: ");
     }
 }

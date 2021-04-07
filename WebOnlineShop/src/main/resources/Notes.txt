@@ -2,7 +2,7 @@
 3 lambdas
 
 NoUrgentes:
--1-arreglar for de customer VER ESTA IMPLEMENTACION
+-1-arreglar for de login VER ESTA IMPLEMENTACION
 
 0- agregar en admin user el creado de productos
 1- add update method to product and user
@@ -12,14 +12,20 @@ NoUrgentes:
 6- generar un hash no cambiable (actualmente usa name y email que puede cambiar)
 abstract user, customer, product
 7- agregar mas collections
-PREGUNTAS:
-1-preguntar a andrew si es buena practica tener varios enums en un mismo file cuando estan muy relacionados
 
+Questions:
+1- All implementations should be compatible with jdk8 or we can use newer practices?
+2- Is a good practice to have various enums in the same file when they are very deeply related? (i.e. my enums classes)
+
+3- Is a good practice to modify a variable and get a return value in a stream?
+in such case, because streams don't get local variables, what is the better implementation?
+Following are the var implementation and next the Atomic Reference
+Implementation with implicit declaration type (Why is not conflicting with the restriction of streams
+to use local variables?)
 
 Customer, clase normalita  modelo
         iABSTRACTDAO <T> -> save, update, delete, get all
         iCustomerDAO extender iABSTRACDAO<Customer>
-        AbstractDAO - opcional
         CustomerDAO extender abstractdao implmentear ICustomerDAO -> DB
 
 

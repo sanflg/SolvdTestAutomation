@@ -6,6 +6,13 @@ public enum CartMenuEnum {
     DELETE_ITEM("Delete an item"),
     EXIT("Exit");
 
-    CartMenuEnum(String option) {
+    private final String value;
+
+    CartMenuEnum(String value) {
+        this.value = value;
+    }
+
+    public String toString(){
+        return this.value;
     }
 }

@@ -9,7 +9,6 @@ import java.util.Objects;
 
 public abstract class AbstractCard implements Payable{
     private static final Logger logger = LogManager.getLogger(MainMenu.class);
-    private static int DIFFERENCE;
     private String cardNumber;
     private String securityNumber;
 
@@ -17,14 +16,6 @@ public abstract class AbstractCard implements Payable{
         logger.info("New card generated");
         this.cardNumber = getDataCardNumber();
         this.securityNumber = getDataSecurityNumber();
-    }
-
-    public static int getDIFFERENCE() {
-        return DIFFERENCE;
-    }
-
-    public static void setDIFFERENCE(int DIFFERENCE) {
-        AbstractCard.DIFFERENCE = DIFFERENCE;
     }
 
     public String getCardNumber() {
@@ -53,7 +44,7 @@ public abstract class AbstractCard implements Payable{
 
     @Override
     public int hashCode() {
-        return MULTIPLY * Objects.hash(getCardNumber(), getSecurityNumber() + DIFFERENCE);
+        return MULTIPLY * Objects.hash(getCardNumber(), getSecurityNumber());
     }
 
     @Override
