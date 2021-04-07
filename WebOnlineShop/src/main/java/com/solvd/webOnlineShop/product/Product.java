@@ -12,7 +12,6 @@ import java.util.Objects;
 public class Product {
     private static final Logger logger = LogManager.getLogger(Product.class);
 
-    private static final int DIFFERENCE = 5;
     private final String creationCode;
     private String name;
     private float price;
