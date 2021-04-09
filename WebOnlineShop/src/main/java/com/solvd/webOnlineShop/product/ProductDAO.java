@@ -8,11 +8,17 @@ import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class ProductDAO implements IAbstractDAO<Product, String, HashMap<String,String>> {
-    private static final ProductDAO productDAO = new ProductDAO();
+    private static ProductDAO productDAO;
 
     //Singleton
     public static ProductDAO getProductDAO() {
+        if (productDAO == null){
+            productDAO = new ProductDAO();
+        }
         return productDAO;
+    }
+
+    private ProductDAO() {
     }
 
     @Override

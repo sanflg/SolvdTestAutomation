@@ -8,11 +8,17 @@ import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class CustomerDAO implements IAbstractDAO<Customer, String, HashMap<String,String>> {
-    private static final CustomerDAO customerDAO = new CustomerDAO();
+    private static CustomerDAO customerDAO;
 
     //Singleton
     public static CustomerDAO getCustomerDAO() {
+        if (customerDAO == null){
+            customerDAO = new CustomerDAO();
+        }
         return customerDAO;
+    }
+
+    private CustomerDAO() {
     }
 
     @Override
