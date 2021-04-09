@@ -1,10 +1,6 @@
 package com.solvd.newLinkedList;
 
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.NoSuchElementException;
-import java.util.Objects;
-import java.util.function.Consumer;
 
 class NewDescendingIterator<E> implements Iterator<E> {
     private final NewIterator<E> itr;

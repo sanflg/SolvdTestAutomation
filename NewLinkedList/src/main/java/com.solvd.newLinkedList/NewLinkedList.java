@@ -21,11 +21,11 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
     }
 
     public E getFirst() { ;
-        return first.item;
+        return first.getItem();
     }
 
     public E getLast() {
-        return last.item;
+        return last.getItem();
     }
 
     public Node<E> getFirstNode() { ;
@@ -43,67 +43,67 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
 
     void linkBefore(E e, Node<E> succ) {
         // assert succ != null;
-        final Node<E> pred = succ.prev;
+        final Node<E> pred = succ.getPrev();
         final Node<E> newNode = new Node<>(pred, e, succ);
-        succ.prev = newNode;
+        succ.setPrev(newNode);
         if (pred == null)
             first = newNode;
         else
-            pred.next = newNode;
+            pred.setNext(newNode);
         size++;
         modCount++;
     }
 
     private E unlinkFirst(Node<E> f) {
-        final E element = f.item;
-        final Node<E> next = f.next;
-        f.item = null;
-        f.next = null; // help GC
+        final E element = f.getItem();
+        final Node<E> next = f.getNext();
+        f.setItem(null);
+        f.setNext(null);
         first = next;
         if (next == null)
             last = null;
         else
-            next.prev = null;
+            next.setPrev(null);
         size--;
         modCount++;
         return element;
     }
 
     private E unlinkLast(Node<E> l) {
-        final E element = l.item;
-        final Node<E> prev = l.prev;
-        l.item = null;
-        l.prev = null; // help GC
+        final E element = l.getItem();
+        final Node<E> prev = l.getPrev();
+        l.setItem(null);
+        l.setPrev(null);
         last = prev;
         if (prev == null)
             first = null;
         else
-            prev.next = null;
+            prev.setNext(null);
         size--;
         modCount++;
         return element;
     }
 
     E unlink(Node<E> x) {
-        final E element = x.item;
-        final Node<E> next = x.next;
-        final Node<E> prev = x.prev;
+        final E element = x.getItem();
+        final Node<E> next = x.getNext();
+        final Node<E> prev = x.getPrev();
 
         if (prev == null) {
             first = next;
         } else {
-            prev.next = next;
-            x.prev = null;
+            prev.setNext(next);
+            x.setPrev(null);
         }
 
         if (next == null) {
             last = prev;
         } else {
-            next.prev = prev;
-            x.next = null;
+            next.setPrev(prev);
+            x.setNext(null);
         }
 
-        x.item = null;
+        x.setItem(null);
         size--;
         modCount++;
         return element;
@@ -130,7 +130,7 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
         if (f == null)
             last = newNode;
         else
-            f.prev = newNode;
+            f.setPrev(newNode);
         size++;
         modCount++;
     }
@@ -142,7 +142,7 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
         if (l == null)
             first = newNode;
         else
-            l.next = newNode;
+            l.setNext(newNode);
         size++;
         modCount++;
     }
@@ -153,15 +153,15 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
 
     public boolean remove(Object o) {
         if (o == null) {
-            for (Node<E> x = first; x != null; x = x.next) {
-                if (x.item == null) {
+            for (Node<E> x = first; x != null; x = x.getNext()) {
+                if (x.getItem() == null) {
                     unlink(x);
                     return true;
                 }
             }
         } else {
-            for (Node<E> x = first; x != null; x = x.next) {
-                if (o.equals(x.item)) {
+            for (Node<E> x = first; x != null; x = x.getNext()) {
+                if (o.equals(x.getItem())) {
                     unlink(x);
                     return true;
                 }
@@ -189,7 +189,7 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
             pred = last;
         } else {
             succ = node(index);
-            pred = succ.prev;
+            pred = succ.getPrev();
         }
 
         for (Object o : a) {
@@ -198,15 +198,15 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
             if (pred == null)
                 first = newNode;
             else
-                pred.next = newNode;
+                pred.setNext(newNode);
             pred = newNode;
         }
 
         if (succ == null) {
             last = pred;
         } else {
-            pred.next = succ;
-            succ.prev = pred;
+            pred.setNext(succ);
+            succ.setPrev(pred);
         }
 
         size += numNew;
@@ -216,14 +216,14 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
 
     public E get(int index) {
         checkElementIndex(index);
-        return node(index).item;
+        return node(index).getItem();
     }
 
     public E set(int index, E element) {
         checkElementIndex(index);
         Node<E> x = node(index);
-        E oldVal = x.item;
-        x.item = element;
+        E oldVal = x.getItem();
+        x.setItem(element);
         return oldVal;
     }
 
@@ -260,11 +260,11 @@ public class NewLinkedList<E> extends AbstractList<E> implements List<E>
         if (index < (size >> 1)) {
             x = first;
             for (int i = 0; i < index; i++)
-                x = x.next;
+                x = x.getNext();
         } else {
             x = last;
             for (int i = size - 1; i > index; i--)
-                x = x.prev;
+                x = x.getPrev();
         }
         return x;
     }

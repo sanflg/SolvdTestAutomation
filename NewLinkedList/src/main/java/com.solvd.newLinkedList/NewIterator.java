@@ -1,6 +1,5 @@
 package com.solvd.newLinkedList;
 
-import java.util.ConcurrentModificationException;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
 import java.util.Objects;
@@ -27,9 +26,9 @@ class NewIterator<E> implements ListIterator<E> {
             throw new NoSuchElementException();
 
         lastReturned = next;
-        next = next.next;
+        next = next.getNext();
         nextIndex++;
-        return lastReturned.item;
+        return lastReturned.getItem();
     }
 
     public boolean hasPrevious() {
@@ -40,9 +39,9 @@ class NewIterator<E> implements ListIterator<E> {
         if (!hasPrevious())
             throw new NoSuchElementException();
 
-        lastReturned = next = (next == null) ? linkedList.getLastNode() : next.prev;
+        lastReturned = next = (next == null) ? linkedList.getLastNode() : next.getPrev();
         nextIndex--;
-        return lastReturned.item;
+        return lastReturned.getItem();
     }
 
     public int nextIndex() {
@@ -57,7 +56,7 @@ class NewIterator<E> implements ListIterator<E> {
         if (lastReturned == null)
             throw new IllegalStateException();
 
-        Node<E> lastNext = lastReturned.next;
+        Node<E> lastNext = lastReturned.getNext();
         linkedList.unlink(lastReturned);
         if (next == lastReturned)
             next = lastNext;
@@ -69,7 +68,7 @@ class NewIterator<E> implements ListIterator<E> {
     public void set(E e) {
         if (lastReturned == null)
             throw new IllegalStateException();
-        lastReturned.item = e;
+        lastReturned.setItem(e);
     }
 
     public void add(E e) {
@@ -84,9 +83,9 @@ class NewIterator<E> implements ListIterator<E> {
     public void forEachRemaining(Consumer<? super E> action) {
         Objects.requireNonNull(action);
         while (nextIndex < linkedList.size()) {
-            action.accept(next.item);
+            action.accept(next.getItem());
             lastReturned = next;
-            next = next.next;
+            next = next.getNext();
             nextIndex++;
         }
     }
