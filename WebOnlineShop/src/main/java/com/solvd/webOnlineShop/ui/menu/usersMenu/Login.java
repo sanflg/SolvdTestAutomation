@@ -15,8 +15,6 @@ import com.solvd.webOnlineShop.user.registeredUser.CustomerTester;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.concurrent.atomic.AtomicReference;
-
 public class Login extends AbstractMenu<EnterDataEnum> {
     private static final Logger logger = LogManager.getLogger(Login.class);
 
@@ -62,36 +60,11 @@ public class Login extends AbstractMenu<EnterDataEnum> {
             password = Customer.writeAlphaNumeric("Password (Only letters and numbers, without spaces): ");
         }
 
-        //Question: Is a good practice to modify a variable and get a return value in a stream?
-        //in such case, because streams don't get local variables, what is the better implementation?
-        //Following are the var implementation and next the Atomic Reference
+        Customer customer = DatabaseSimulation.getUsersSet().stream().filter(user->
+                userName.equals(user.getUserName()) && password.equals(user.getPassword())).findFirst().orElse(null);
 
-        //Implementation with implicit declaration type (Why is not conflicting with the restriction of streams
-        //to use local variables? is thread safe?)
-
-        /*
-        var returnCustomer = new Object(){ Customer userExist; };
-
-        DatabaseSimulation.getUsersSet().forEach(user->{
-            if (userName.equals(user.getUserName()) && password.equals(user.getPassword())) returnCustomer.userExist=user;});
-
-        if (returnCustomer.userExist == null){
-            throw new NoObjectException("NoUserFoundException occurred: ");
-        }else{
-            logger.info("Correctly logged");
-            return returnCustomer.userExist;
-        }
-        */
-
-        //Implementation with Atomic Reference
-
-        AtomicReference<Customer> returnCustomer = new AtomicReference<>();
-
-        DatabaseSimulation.getUsersSet().forEach(user->{
-            if (userName.equals(user.getUserName()) && password.equals(user.getPassword())) returnCustomer.set(user);});
-
-        if (returnCustomer.get() == null) throw new NoObjectException("NoUserFoundException occurred: ");
-        else logger.info("Correctly logged"); return returnCustomer.get();
+        if (customer == null) throw new NoObjectException("NoUserFoundException occurred: ");
+        else logger.info("Correctly logged"); return customer;
 
         //In case of this to be a bad practice: check the ObjectDAO classes that use the same resolution.
     }
