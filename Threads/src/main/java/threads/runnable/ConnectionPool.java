@@ -1,4 +1,4 @@
-package threads.connection;
+package threads.runnable;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -7,7 +7,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class ConnectionPool {
-    private static final Logger logger = LogManager.getLogger(RunnableConnection.class);
+    private static final Logger logger = LogManager.getLogger(ConnectionPool.class);
     private static final int POOL_SIZE = 5;
     private static ConnectionPool connectionPool;
     private BlockingQueue<Connection> connections;

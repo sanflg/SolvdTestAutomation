@@ -1,13 +1,12 @@
-package threads.completableFuture;
+package threads.callable;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import threads.connection.RunnableConnection;
 
 import java.util.concurrent.Callable;
 
 public class CallableDice implements Callable<Integer> {
-    private static final Logger logger = LogManager.getLogger(RunnableConnection.class);
+    private static final Logger logger = LogManager.getLogger(CallableDice.class);
     private final DiceBasket pool;
     private int lastNumber;
     private final int id;

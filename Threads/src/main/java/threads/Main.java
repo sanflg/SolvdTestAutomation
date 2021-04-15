@@ -3,11 +3,11 @@ package threads;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import threads.completableFuture.CallableDice;
-import threads.connection.ConnectionPool;
+import threads.callable.CallableDice;
+import threads.runnable.ConnectionPool;
 
-import threads.completableFuture.DiceBasket;
-import threads.connection.RunnableConnection;
+import threads.callable.DiceBasket;
+import threads.runnable.RunnableConnection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,50 +24,72 @@ public class Main {
 
     public static void main(String[] args){
 
-        //connections threads
         ExecutorService connectionsExecutor = Executors.newFixedThreadPool(EXECUTIONS);
 
+        //---> Runnable example
         IntStream.range(0,EXECUTIONS).forEach(execution->{
             logger.info("A thread is executing a new RunnableConnection");
             connectionsExecutor.execute(new RunnableConnection(runnableCount, connectionPool));
-            incrementRunnableCount();
+            runnableCount++;
         });
-        runnableCount = 0;
-        connectionsExecutor.shutdown();
+        runnableCount = 1;
 
-        //dices threads
-        ExecutorService diceExecutor = Executors.newFixedThreadPool(EXECUTIONS);
+        //---> Callable example with Future
 
         List<Future<Integer>> futuresList = new ArrayList<>();
 
         IntStream.range(0,EXECUTIONS).forEach(execution ->{
             logger.info("A thread is executing a new RunnableDice");
-            Future<Integer> future = diceExecutor.submit(new CallableDice(runnableCount, diceBasket));
-            incrementRunnableCount();
+            Future<Integer> future = connectionsExecutor.submit(new CallableDice(runnableCount, diceBasket));
+            runnableCount++;
             futuresList.add(future);
         });
 
+        //This block is outside of the previous stream because the .get() method will stop the execution of Main,
+        //delaying every iteration until the result of the previous one is done, therefore, not generating a new thread,
+        //and working in a sequential way. The previous list is used to store the reference of every object to apply the
+        //.get() method latter.
         futuresList.forEach(f->{
             try {
-                int partial = f.get();
-                logger.info("partial result is: " + partial);
-                incrementResult(partial);
-                logger.info("The total result sums up, so far: " + result);
+                logger.info("partial result is: " +  incrementResult(f.get()));
             } catch (InterruptedException | ExecutionException e) {
                 logger.error("Thread interrupted: " + e);
             }
         });
 
         logger.info("The dices throw sums up: " + result);
-        runnableCount = 0;
-        diceExecutor.shutdown();
+        runnableCount = 1;
+        result = 0;
+
+        //---> Callable example with CompletableFuture
+        List<Future<Integer>> completableFuturesList = new ArrayList<>();
+
+        IntStream.range(0,EXECUTIONS).forEach(execution ->{
+            logger.info("A thread is executing a new RunnableDice");
+            CompletableFuture<Integer> future = CompletableFuture.supplyAsync(()->{
+                int i = 0;
+                try {i = new CallableDice(runnableCount, diceBasket).call();
+                }catch (InterruptedException e) {logger.error("Couldn't call new dice: " + e); }
+                return i;
+            });
+            completableFuturesList.add(future);
+            runnableCount++;
+        });
+
+        completableFuturesList.forEach(f->{
+            try {
+                logger.info("partial result is: " +  incrementResult(f.get()));
+            } catch (InterruptedException | ExecutionException e) {
+                logger.error("Thread interrupted: " + e);
+            }
+        });
+
+        logger.info("The dices throw sums up: " + result);
+
+        connectionsExecutor.shutdown();
     }
 
-    public static synchronized void incrementRunnableCount(){
-        runnableCount++;
-    }
-
-    public static synchronized void incrementResult(int i){
-        result+=i;
+    public static synchronized int incrementResult(int i){
+        return result+=i;
     }
 }
