@@ -25,7 +25,7 @@ public abstract class
     public void printAllElementsCollection(L options){
         logger.info("Giving all elements options with String[] parameter");
         AtomicInteger number = new AtomicInteger();
-        options.forEach((m)->logger.info(number.getAndIncrement() + "- " + m.toString()));}
+        options.stream().forEach((m)->logger.info(number.getAndIncrement() + "- " + m.toString()));}
 
     public int manageOptionsCollection(L options) {
 

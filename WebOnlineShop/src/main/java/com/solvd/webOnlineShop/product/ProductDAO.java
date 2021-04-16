@@ -31,7 +31,7 @@ public class ProductDAO implements IAbstractDAO<Product, String, HashMap<String,
 
         AtomicReference<Product> storeProduct = new AtomicReference<>();
 
-        DatabaseSimulation.getProductList().forEach(product->{
+        DatabaseSimulation.getProductList().stream().forEach(product->{
             if (name.equals(product.getName())) storeProduct.set(product);});
         return storeProduct.get();
     }

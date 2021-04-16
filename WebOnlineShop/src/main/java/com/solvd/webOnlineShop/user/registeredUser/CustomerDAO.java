@@ -31,7 +31,7 @@ public class CustomerDAO implements IAbstractDAO<Customer, String, HashMap<Strin
 
         AtomicReference<Customer> storeCustomer = new AtomicReference<>();
 
-        DatabaseSimulation.getUsersSet().forEach(user->{
+        DatabaseSimulation.getUsersSet().stream().forEach(user->{
             if (name.equals(user.getUserName())) storeCustomer.set(user);});
         return storeCustomer.get();
     }

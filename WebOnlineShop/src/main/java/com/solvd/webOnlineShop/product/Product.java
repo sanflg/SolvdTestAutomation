@@ -95,6 +95,6 @@ public class Product {
         if(DatabaseSimulation.getProductList().size() == 0){
             throw new NoProductsException("NoProductsException Occurred: ");
         }
-        DatabaseSimulation.getProductList().forEach(product -> logger.info(product.toString()));
+        DatabaseSimulation.getProductList().stream().forEach(product -> logger.info(product.toString()));
     }
 }

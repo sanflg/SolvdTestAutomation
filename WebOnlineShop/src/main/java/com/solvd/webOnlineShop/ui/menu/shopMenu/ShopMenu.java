@@ -50,7 +50,7 @@ public class ShopMenu extends AbstractMenuCollections<ShopMenuEnum, ArrayList<Pr
 
                 try {
                     if (user instanceof Guest) {
-                        searchProducts().forEach(product -> logger.info(product.toString()));
+                        searchProducts().stream().forEach(product -> logger.info(product.toString()));
                     }else  searchProductsForPurchase(user);
 
                 } catch (NoProductsException e) {
