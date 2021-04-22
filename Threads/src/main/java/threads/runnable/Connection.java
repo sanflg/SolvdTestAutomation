@@ -11,7 +11,7 @@ public class Connection {
         this.number = number;
     }
 
-    public synchronized void doSomething() throws InterruptedException {
+    public void doSomething() throws InterruptedException {
         logger.info("Connection " + number + " is doing something");
         wait(1000);
     }

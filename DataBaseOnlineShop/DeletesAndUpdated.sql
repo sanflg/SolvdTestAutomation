@@ -1,8 +1,8 @@
-DELETE FROM users 
+DELETE FROM individuals 
 WHERE
-    id = 1;
+    id = 6;
 
-UPDATE users 
+UPDATE individuals 
 SET 
     languages_id = 1
 WHERE
@@ -16,31 +16,9 @@ DELETE FROM countries
 WHERE
     id = 3;
 
-DELETE FROM users 
+DELETE FROM individuals 
 WHERE
-    cities_id = 1;
-
-DELETE FROM users 
-WHERE
-    id = 2;
-
-DELETE FROM statuses 
-WHERE
-    name = 'Unverified';
-
-DELETE FROM usersstatuses 
-WHERE
-    users_id = 4 AND states_id = 1;
-
-DELETE FROM suppliers 
-WHERE
-    name = 'Distributor 4';
-
-UPDATE users 
-SET 
-    users.cities_id = 1
-WHERE
-    cities_id IS NULL;
+    id = 5;
 
 UPDATE products 
 SET 
@@ -52,13 +30,13 @@ DELETE FROM currencies
 WHERE
     id = 3;
 
-UPDATE users 
+UPDATE individuals 
 SET 
     languages_id = 2
 WHERE
     languages_id = 1 AND username = 'JoJo';
 
-UPDATE users 
+UPDATE individuals 
 SET 
     first_name = 'Pepito'
 WHERE

@@ -61,50 +61,57 @@ INSERT INTO Cities (name, States_id) VALUES ('Santa Ana', 16);
 INSERT INTO Cities (name, States_id) VALUES ('Posadas', 17);
 INSERT INTO Cities (name, States_id) VALUES ('Obera', 17);
 
-#Languages
+INSERT INTO Adresses (name, Cities_id) VALUES ('Avenida Siempre Viva', 4);
+INSERT INTO Adresses (name, Cities_id) VALUES ('Torfyanoy Pereulok', 13);
+INSERT INTO Adresses (name, Cities_id) VALUES ('Narodnaja vulica', 15);
+INSERT INTO Adresses (name, Cities_id) VALUES ('Juan B. Justo', 29);
+INSERT INTO Adresses (name, Cities_id) VALUES ('Mexico', 34);
+
 INSERT INTO Languages (name, tag) VALUES ('English', 'ENG');
 INSERT INTO Languages (name, tag) VALUES ('Belarusian', 'BEL');
 INSERT INTO Languages (name, tag) VALUES ('Spanish', 'SPA');
 
-#Categories
 INSERT INTO Categories (name) VALUES ('Food');
 INSERT INTO Categories (name) VALUES ('Games');
 INSERT INTO Categories (name) VALUES ('Tecnology');
 INSERT INTO Categories (name) VALUES ('House');
 
-#Currencies
 INSERT INTO Currencies (name, tag) VALUES ('Dollar', 'USD');
 INSERT INTO Currencies (name, tag) VALUES ('Ruble', 'BYR');
 INSERT INTO Currencies (name, tag) VALUES ('Peso', 'ARS');
 
-#Statuses
-INSERT INTO Statuses (name) VALUES ('Admin');
-INSERT INTO Statuses (name) VALUES ('Banned');
-INSERT INTO Statuses (name) VALUES ('Unverified');
-INSERT INTO Statuses (name) VALUES ('Premium');
-INSERT INTO Statuses (name) VALUES ('New');
+#IndividualStatus and Carts are created using Individuals Triggers (After creating new Individual)
+INSERT INTO Individuals (username, password, email, first_name, last_name, birth_date, languages_id)
+	VALUES ('Juan2mvo', '123123', 'Juan@gmail.com', 'Juan', 'Perez', '1996-08-13', 3);
+INSERT INTO Individuals (username, password, email, first_name, last_name, birth_date, languages_id)
+	VALUES ('Pepepepe', 'asdasd', 'Pepitox@gmail.com' ,'Pepe', 'Ramirez', '1982-08-13', 3);
+INSERT INTO Individuals (username, password, email, first_name, last_name, birth_date, languages_id)
+	VALUES ('JoJo', 'Isthisareference?', 'JoJo@gmail.com' ,'Jonathan', 'Joestar', '1835-04-15', 1);
+INSERT INTO Individuals (username, password, email, first_name, last_name, birth_date, languages_id)
+	VALUES ('JoJo2', 'Isthisareference?', 'Jojo2@gmail.com' ,'Joseph', 'Joestar', '1935-01-27', 1);
+INSERT INTO Individuals (username, password, email, first_name, last_name, birth_date, languages_id)
+	VALUES ('Darya2512', 'Jask25jL.s.aj2', 'Darya@gmail.com' ,'Darya', 'Azarenka', '2000-12-03', 2);
+INSERT INTO Individuals (username, password, email, first_name, last_name, birth_date, languages_id)
+	VALUES ('Ivannnn', 'aslK)#(3kfqpx.', 'Ivan@gmail.com' ,'Ivan', 'Kavalski', '1992-09-13', 2);
 
-#Suppliers
-INSERT INTO Suppliers (name, adress, adress_num, cities_id ) VALUES ('Ikea', 'A place', 1412, 15);
-INSERT INTO Suppliers (name, adress, adress_num, cities_id ) VALUES ('Ace Endico Corp', 'A place2', 314, 2);
-INSERT INTO Suppliers (name, adress, adress_num, cities_id ) VALUES ('Distributor SA', 'A Street', 5151, 31);
-INSERT INTO Suppliers (name, adress, adress_num, cities_id ) VALUES ('Distributor 4', 'A Street', 1313, 31);
+INSERT INTO IndividualAdresses (number, Adresses_id, Individuals_id) VALUES (1512, 1, 1);
+INSERT INTO IndividualAdresses (number, Adresses_id, Individuals_id) VALUES (162, 1, 2);
+INSERT INTO IndividualAdresses (number, Adresses_id, Individuals_id) VALUES (915, 2, 3);
+INSERT INTO IndividualAdresses (number, Adresses_id, Individuals_id) VALUES (519, 3, 4);
+INSERT INTO IndividualAdresses (number, Adresses_id, Individuals_id) VALUES (19, 4, 5);
+INSERT INTO IndividualAdresses (number, Adresses_id, Individuals_id) VALUES (2621, 5, 6);
 
-#Users (Carts are created using a trigger for each new user)
-INSERT INTO users (username, password, email, first_name, last_name, birth_date, adress, adress_num, languages_id, cities_id)
-	VALUES ('Juan2mvo', '123123', 'Juan@gmail.com' ,'Juan', 'Perez', '1996-08-13', 'Juan B. Justo', 1612, 3, 29);
-INSERT INTO users (username, password, email, first_name, last_name, birth_date, adress, adress_num, languages_id, cities_id)
-	VALUES ('Pepepepe', 'asdasd', 'Pepitox@gmail.com' ,'Pepe', 'Ramirez', '1982-08-13', 'Juan B. Justo', 612, 3, 28);
-INSERT INTO users (username, password, email, first_name, last_name, birth_date, adress, adress_num, languages_id, cities_id)
-	VALUES ('JoJo', 'Isthisareference?', 'JoJo@gmail.com' ,'Jonathan', 'Joestar', '1835-04-15', 'A Place', 151, 1, 4);
-INSERT INTO users (username, password, email, first_name, last_name, birth_date, adress, adress_num, languages_id, cities_id)
-	VALUES ('JoJo2', 'Isthisareference?', 'Jojo2@gmail.com' ,'Joseph', 'Joestar', '1935-01-27', 'Another Place', 6123, 1, 1);
-INSERT INTO users (username, password, email, first_name, last_name, birth_date, adress, adress_num, languages_id, cities_id)
-	VALUES ('Darya2512', 'Jask25jL.s.aj2', 'Darya@gmail.com' ,'Darya', 'Azarenka', '2000-12-03', 'A Belarusian Street', 1512, 2, 17);
-INSERT INTO users (username, password, email, first_name, last_name, birth_date, adress, adress_num, languages_id, cities_id)
-	VALUES ('Ivannnn', 'aslK)#(3kfqpx.', 'Ivan@gmail.com' ,'Ivan', 'Kavalski', '1992-09-13', 'Another Belarusian Street', 251, 2, 18);
-    
-#Products
+INSERT INTO Suppliers (Individuals_id) VALUES (1);
+INSERT INTO Suppliers (Individuals_id) VALUES (3);
+INSERT INTO Suppliers (Individuals_id) VALUES (5);
+
+INSERT INTO PhoneNumbers (number, Individuals_id) VALUES (31151231, 1);
+INSERT INTO PhoneNumbers (number, Individuals_id) VALUES (85182931, 2);
+INSERT INTO PhoneNumbers (number, Individuals_id) VALUES (96910236, 3);
+INSERT INTO PhoneNumbers (number, Individuals_id) VALUES (01069122, 4);
+INSERT INTO PhoneNumbers (number, Individuals_id) VALUES (00105192, 5);
+INSERT INTO PhoneNumbers (number, Individuals_id) VALUES (68190239, 6);
+
 INSERT INTO Products (name, price, categories_id, currencies_id, suppliers_id) VALUES ('Lettuce', 1.25, 1, 3, 2);
 INSERT INTO Products (name, price, categories_id, currencies_id, suppliers_id) VALUES ('Pork', 3.15, 1, 2, 2);
 INSERT INTO Products (name, price, categories_id, currencies_id, suppliers_id) VALUES ('Minecraft', 25.99, 2, 3, 3);
@@ -114,19 +121,8 @@ INSERT INTO Products (name, price, categories_id, currencies_id, suppliers_id) V
 INSERT INTO Products (name, price, categories_id, currencies_id, suppliers_id) VALUES ('Chair', 15.50, 4, 1, 1);
 INSERT INTO Products (name, price, categories_id, currencies_id, suppliers_id) VALUES ('Table', 25.50, 4, 3, 1);
 
-#ProductsCarts
-INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (3, 1, 3);
-INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (3, 2, 1);
-INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (1, 1, 2);
-INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (2, 3, 6);
-INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (5, 1, 4);
-
-#UserStatuses
-INSERT INTO usersstatuses (Statuses_id, Users_id) VALUES (1 , 3);
-INSERT INTO usersstatuses (Statuses_id, Users_id) VALUES (3 , 1);
-INSERT INTO usersstatuses (Statuses_id, Users_id) VALUES (5 , 6);
-INSERT INTO usersstatuses (Statuses_id, Users_id) VALUES (1 , 4);
-INSERT INTO usersstatuses (Statuses_id, Users_id) VALUES (1 , 2);
-INSERT INTO usersstatuses (Statuses_id, Users_id) VALUES (2 , 2);
-INSERT INTO usersstatuses (Statuses_id, Users_id) VALUES (1 , 1);
-INSERT INTO usersstatuses (Statuses_id, Users_id) VALUES (1 , 5);
+INSERT INTO productscarts (Carts_id, quantity, Products_id) VALUES (3, 1, 3);
+INSERT INTO productscarts (Carts_id, quantity, Products_id) VALUES (3, 2, 1);
+INSERT INTO productscarts (Carts_id, quantity, Products_id) VALUES (1, 1, 2);
+INSERT INTO productscarts (Carts_id, quantity, Products_id) VALUES (2, 3, 6);
+INSERT INTO productscarts (Carts_id, quantity, Products_id) VALUES (5, 1, 4);

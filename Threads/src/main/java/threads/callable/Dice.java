@@ -14,7 +14,7 @@ public class Dice{
         this.number = number;
     }
 
-    public synchronized int throwDice(){
+    public int throwDice(){
         Random random = new Random();
         int i = random.nextInt(FACES) + 1;
         logger.info("Dice " + number + " throws: " + i);
