@@ -1,23 +1,23 @@
 package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.individual;
 
-import com.solvd.dataBaseOnlineShop.dao.interfaces.individual.IIndividualStatusDAO;
+import com.solvd.dataBaseOnlineShop.dao.interfaces.individual.IIndividualStatusesDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.individual.IndividualStatus;
+import com.solvd.dataBaseOnlineShop.models.individual.IndividualStatus;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.sql.*;
 
-public class IndividualStatusDAO extends AbstractJDBC implements IIndividualStatusDAO {
+public class IndividualStatusDAO extends AbstractJDBC implements IIndividualStatusesDAO {
     private static final Logger logger = LogManager.getLogger(IndividualStatusDAO.class);
     private static final String CREATE_INDIVIDUALSTATUS =
-            "INSERT INTO IndividualStatus (IsAdmin, IsNew, IsBanned, Individuals_id) VALUES (?, ?, ?, ?)";
+            "INSERT INTO IndividualStatuses (IsAdmin, IsNew, IsBanned, Individuals_id) VALUES (?, ?, ?, ?)";
     private static final String GET_INDIVIDUALSTATUS_BY_ID =
-            "SELECT * FROM IndividualStatus WHERE id = ?";
+            "SELECT * FROM IndividualStatuses WHERE id = ?";
     private static final String UPDATE_INDIVIDUALSTATUS =
-            "UPDATE IndividualStatus SET IsAdmin=?, IsNew=?, IsBanned=?, Individuals_id=? WHERE id=?";
+            "UPDATE IndividualStatuses SET IsAdmin=?, IsNew=?, IsBanned=?, Individuals_id=? WHERE id=?";
     private static final String DELETE_INDIVIDUALSTATUS =
-            "DELETE FROM IndividualStatus WHERE id=?";
+            "DELETE FROM IndividualStatuses WHERE id=?";
 
     @Override
     public void create(IndividualStatus individualStatus) {
@@ -52,11 +52,11 @@ public class IndividualStatusDAO extends AbstractJDBC implements IIndividualStat
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            individualStatus.setId(rs.getInt("id"));
             individualStatus.setAdmin(rs.getBoolean("IsAdmin"));
             individualStatus.setNew(rs.getBoolean("IsNew"));
             individualStatus.setBanned(rs.getBoolean("IsBanned"));
             individualStatus.setIndividualId(rs.getInt("Individuals_id"));
-
         } catch (SQLException e) {
             logger.error("SQLException trying to get individualStatus by ID: ", e);
         }finally {
@@ -66,7 +66,7 @@ public class IndividualStatusDAO extends AbstractJDBC implements IIndividualStat
     }
 
     @Override
-    public void update(IndividualStatus individualStatus, int id) {
+    public void update(IndividualStatus individualStatus) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -77,7 +77,7 @@ public class IndividualStatusDAO extends AbstractJDBC implements IIndividualStat
             ps.setBoolean(2, individualStatus.isNew());
             ps.setBoolean(3, individualStatus.isBanned());
             ps.setInt(4, individualStatus.getIndividualId());
-            ps.setInt(5, id);
+            ps.setInt(5, individualStatus.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

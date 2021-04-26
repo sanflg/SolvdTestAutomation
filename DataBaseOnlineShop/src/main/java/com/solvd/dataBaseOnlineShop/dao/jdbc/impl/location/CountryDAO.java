@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.location;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.location.ICountryDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.location.Country;
+import com.solvd.dataBaseOnlineShop.models.location.Country;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -50,9 +50,9 @@ public class CountryDAO extends AbstractJDBC implements ICountryDAO {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            country.setId(rs.getInt("id"));
             country.setName(rs.getString("name"));
             country.setTag(rs.getString("tag"));
-
         } catch (SQLException e) {
             logger.error("SQLException trying to get country by ID: ", e);
         }finally {
@@ -62,7 +62,7 @@ public class CountryDAO extends AbstractJDBC implements ICountryDAO {
     }
 
     @Override
-    public void update(Country country, int id) {
+    public void update(Country country) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -71,7 +71,7 @@ public class CountryDAO extends AbstractJDBC implements ICountryDAO {
             ps = c.prepareStatement(UPDATE_COUNTRY, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, country.getName());
             ps.setString(2, country.getTag());
-            ps.setInt(3, id);
+            ps.setInt(3, country.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

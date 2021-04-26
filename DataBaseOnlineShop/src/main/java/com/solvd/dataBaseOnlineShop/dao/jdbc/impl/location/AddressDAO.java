@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.location;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.location.IAddressDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.location.Address;
+import com.solvd.dataBaseOnlineShop.models.location.Address;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -50,9 +50,9 @@ public class AddressDAO extends AbstractJDBC implements IAddressDAO {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            address.setId(rs.getInt("id"));
             address.setName(rs.getString("name"));
             address.setCityId(rs.getInt("Cities_id"));
-
         } catch (SQLException e) {
             logger.error("SQLException trying to get address by ID: ", e);
         }finally {
@@ -62,7 +62,7 @@ public class AddressDAO extends AbstractJDBC implements IAddressDAO {
     }
 
     @Override
-    public void update(Address address, int id) {
+    public void update(Address address) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -71,7 +71,7 @@ public class AddressDAO extends AbstractJDBC implements IAddressDAO {
             ps = c.prepareStatement(UPDATE_ADDRESS, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, address.getName());
             ps.setInt(2, address.getCity());
-            ps.setInt(3, id);
+            ps.setInt(3, address.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

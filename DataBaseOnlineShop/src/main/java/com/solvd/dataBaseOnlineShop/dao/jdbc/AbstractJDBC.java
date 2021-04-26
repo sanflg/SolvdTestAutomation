@@ -32,5 +32,4 @@ public abstract class AbstractJDBC {
             logger.error("Error closing resources in closeResources(), AbstractJDBC: ", e);
         }
     }
-
 }

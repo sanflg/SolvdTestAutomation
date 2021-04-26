@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.individual;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.individual.IIndividualAddressDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.individual.IndividualAddress;
+import com.solvd.dataBaseOnlineShop.models.individual.IndividualAddress;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -51,10 +51,10 @@ public class IndividualAddressDAO extends AbstractJDBC implements IIndividualAdd
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            individualAddress.setId(rs.getInt("id"));
             individualAddress.setNumber(rs.getInt("number"));
             individualAddress.setAddressId(rs.getInt("Addresses_id"));
             individualAddress.setIndividualId(rs.getInt("Individuals_id"));
-
         } catch (SQLException e) {
             logger.error("SQLException trying to get individualAddress by ID: ", e);
         }finally {
@@ -64,7 +64,7 @@ public class IndividualAddressDAO extends AbstractJDBC implements IIndividualAdd
     }
 
     @Override
-    public void update(IndividualAddress individualAddress, int id) {
+    public void update(IndividualAddress individualAddress) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -74,7 +74,7 @@ public class IndividualAddressDAO extends AbstractJDBC implements IIndividualAdd
             ps.setInt(1, individualAddress.getNumber());
             ps.setInt(2, individualAddress.getAddress());
             ps.setInt(3, individualAddress.getIndividual());
-            ps.setInt(4, id);
+            ps.setInt(4, individualAddress.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

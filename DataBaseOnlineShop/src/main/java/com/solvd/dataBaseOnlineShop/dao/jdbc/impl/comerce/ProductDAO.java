@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.comerce;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.comerce.IProductDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.comerce.Product;
+import com.solvd.dataBaseOnlineShop.models.comerce.Product;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,23 +20,23 @@ public class ProductDAO extends AbstractJDBC implements IProductDAO {
             "DELETE FROM Product sWHERE id = ?";
 
     @Override
-    public void create(Product products) {
+    public void create(Product product) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         try{
             c = getCp().getConnection();
             ps = c.prepareStatement(CREATE_PRODUCT, Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, products.getName());
-            ps.setDouble(2, products.getPrice());
-            ps.setString(3, products.getDescription());
-            ps.setInt(4, products.getSupplierId());
-            ps.setInt(5, products.getCurrencyId());
-            ps.setInt(6, products.getCategoryId());
+            ps.setString(1, product.getName());
+            ps.setDouble(2, product.getPrice());
+            ps.setString(3, product.getDescription());
+            ps.setInt(4, product.getSupplierId());
+            ps.setInt(5, product.getCurrencyId());
+            ps.setInt(6, product.getCategoryId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {
-            logger.error("SQLException trying to create products: ", e);
+            logger.error("SQLException trying to create product: ", e);
         }finally {
             closeResources(c, ps, rs);
         }
@@ -47,46 +47,47 @@ public class ProductDAO extends AbstractJDBC implements IProductDAO {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        Product products = new Product();
+        Product product = new Product();
         try{
             c = getCp().getConnection();
             ps = c.prepareStatement(GET_PRODUCT_BY_ID, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
-            products.setName(rs.getString("name"));
-            products.setPrice(rs.getDouble("price"));
-            products.setDescription(rs.getString("description"));
-            products.setSupplierId(rs.getInt("Suppliers_id"));
-            products.setCurrencyId(rs.getInt("Currencies_id"));
-            products.setCategoryId(rs.getInt("Categories_id"));
+            product.setId(rs.getInt("id"));
+            product.setName(rs.getString("name"));
+            product.setPrice(rs.getDouble("price"));
+            product.setDescription(rs.getString("description"));
+            product.setSupplierId(rs.getInt("Suppliers_id"));
+            product.setCurrencyId(rs.getInt("Currencies_id"));
+            product.setCategoryId(rs.getInt("Categories_id"));
         } catch (SQLException e) {
-            logger.error("SQLException trying to get products by ID: ", e);
+            logger.error("SQLException trying to get product by ID: ", e);
         }finally {
             closeResources(c, ps, rs);
         }
-        return products;
+        return product;
     }
 
     @Override
-    public void update(Product products, int id) {
+    public void update(Product product) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         try{
             c = getCp().getConnection();
             ps = c.prepareStatement(UPDATE_CART, Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, products.getName());
-            ps.setDouble(2, products.getPrice());
-            ps.setString(3, products.getDescription());
-            ps.setInt(4, products.getSupplierId());
-            ps.setInt(5, products.getCurrencyId());
-            ps.setInt(6, products.getCategoryId());
-            ps.setInt(7, id);
+            ps.setString(1, product.getName());
+            ps.setDouble(2, product.getPrice());
+            ps.setString(3, product.getDescription());
+            ps.setInt(4, product.getSupplierId());
+            ps.setInt(5, product.getCurrencyId());
+            ps.setInt(6, product.getCategoryId());
+            ps.setInt(7, product.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {
-            logger.error("SQLException trying to update products: ", e);
+            logger.error("SQLException trying to update product: ", e);
         }finally {
             closeResources(c, ps, rs);
         }
@@ -104,7 +105,7 @@ public class ProductDAO extends AbstractJDBC implements IProductDAO {
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {
-            logger.error("SQLException trying to delete products: ", e);
+            logger.error("SQLException trying to delete product: ", e);
         }finally {
             closeResources(c, ps, rs);
         }

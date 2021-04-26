@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.comerce;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.comerce.ICategoryDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.comerce.Category;
+import com.solvd.dataBaseOnlineShop.models.comerce.Category;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -49,8 +49,8 @@ public class CategoryDAO extends AbstractJDBC implements ICategoryDAO {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            category.setId(rs.getInt("id"));
             category.setName(rs.getString("name"));
-
         } catch (SQLException e) {
             logger.error("SQLException trying to get category by ID: ", e);
         }finally {
@@ -60,7 +60,7 @@ public class CategoryDAO extends AbstractJDBC implements ICategoryDAO {
     }
 
     @Override
-    public void update(Category category, int id) {
+    public void update(Category category) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -68,7 +68,7 @@ public class CategoryDAO extends AbstractJDBC implements ICategoryDAO {
             c = getCp().getConnection();
             ps = c.prepareStatement(UPDATE_CATEGORY, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, category.getName());
-            ps.setInt(2, id);
+            ps.setInt(2, category.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

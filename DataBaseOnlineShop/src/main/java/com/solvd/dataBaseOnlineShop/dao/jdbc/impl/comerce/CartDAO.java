@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.comerce;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.comerce.ICartDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.comerce.Cart;
+import com.solvd.dataBaseOnlineShop.models.comerce.Cart;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,7 +24,7 @@ public class CartDAO extends AbstractJDBC implements ICartDAO {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        try{
+        try {
             c = getCp().getConnection();
             ps = c.prepareStatement(CREATE_CART, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, cart.getIndividualId());
@@ -32,7 +32,7 @@ public class CartDAO extends AbstractJDBC implements ICartDAO {
             rs.next();
         } catch (SQLException e) {
             logger.error("SQLException trying to create cart: ", e);
-        }finally {
+        } finally {
             closeResources(c, ps, rs);
         }
     }
@@ -43,36 +43,37 @@ public class CartDAO extends AbstractJDBC implements ICartDAO {
         PreparedStatement ps = null;
         ResultSet rs = null;
         Cart cart = new Cart();
-        try{
+        try {
             c = getCp().getConnection();
             ps = c.prepareStatement(GET_CART_BY_ID, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            cart.setId(rs.getInt("id"));
             cart.setIndividualId(rs.getInt("Individuals_id"));
         } catch (SQLException e) {
             logger.error("SQLException trying to get cart by ID: ", e);
-        }finally {
+        } finally {
             closeResources(c, ps, rs);
         }
         return cart;
     }
 
     @Override
-    public void update(Cart cart, int id) {
+    public void update(Cart cart) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        try{
+        try {
             c = getCp().getConnection();
             ps = c.prepareStatement(UPDATE_CART, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, cart.getIndividualId());
-            ps.setInt(2, id);
+            ps.setInt(2, cart.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {
             logger.error("SQLException trying to update cart: ", e);
-        }finally {
+        } finally {
             closeResources(c, ps, rs);
         }
     }
@@ -82,7 +83,7 @@ public class CartDAO extends AbstractJDBC implements ICartDAO {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        try{
+        try {
             c = getCp().getConnection();
             ps = c.prepareStatement(DELETE_CART, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, id);
@@ -90,7 +91,7 @@ public class CartDAO extends AbstractJDBC implements ICartDAO {
             rs.next();
         } catch (SQLException e) {
             logger.error("SQLException trying to delete cart: ", e);
-        }finally {
+        } finally {
             closeResources(c, ps, rs);
         }
     }

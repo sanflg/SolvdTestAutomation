@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.individual;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.individual.IIndividualDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.individual.Individual;
+import com.solvd.dataBaseOnlineShop.models.individual.Individual;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -56,6 +56,7 @@ public class IndividualDAO
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            individual.setId(rs.getInt("id"));
             individual.setUsername(rs.getString("username"));
             individual.setPassword(rs.getString("password"));
             individual.setEmail(rs.getString("email"));
@@ -72,7 +73,7 @@ public class IndividualDAO
     }
 
     @Override
-    public void update(Individual individual, int id) {
+    public void update(Individual individual) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -86,7 +87,7 @@ public class IndividualDAO
             ps.setString(5, individual.getLastName());
             ps.setDate(6, individual.getDate());
             ps.setInt(7, individual.getLanguage());
-            ps.setInt(8, id);
+            ps.setInt(8, individual.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

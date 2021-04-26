@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.comerce;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.comerce.IOrderDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.comerce.Order;
+import com.solvd.dataBaseOnlineShop.models.comerce.Order;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -49,8 +49,8 @@ public class OrderDAO extends AbstractJDBC implements IOrderDAO {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            order.setId(rs.getInt("id"));
             order.setCartId(rs.getInt("Carts_id"));
-
         } catch (SQLException e) {
             logger.error("SQLException trying to get order by ID: ", e);
         }finally {
@@ -60,7 +60,7 @@ public class OrderDAO extends AbstractJDBC implements IOrderDAO {
     }
 
     @Override
-    public void update(Order order, int id) {
+    public void update(Order order) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -68,7 +68,7 @@ public class OrderDAO extends AbstractJDBC implements IOrderDAO {
             c = getCp().getConnection();
             ps = c.prepareStatement(UPDATE_CART, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, order.getCartId());
-            ps.setInt(2, id);
+            ps.setInt(2, order.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

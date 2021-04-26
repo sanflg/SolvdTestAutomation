@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.comerce;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.comerce.ISupplierDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.comerce.Supplier;
+import com.solvd.dataBaseOnlineShop.models.comerce.Supplier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -49,6 +49,7 @@ public class SupplierDAO extends AbstractJDBC implements ISupplierDAO {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            supplier.setId(rs.getInt("id"));
             supplier.setIndividualId(rs.getInt("Individuals_id"));
         } catch (SQLException e) {
             logger.error("SQLException trying to get supplier by ID: ", e);
@@ -59,7 +60,7 @@ public class SupplierDAO extends AbstractJDBC implements ISupplierDAO {
     }
 
     @Override
-    public void update(Supplier supplier, int id) {
+    public void update(Supplier supplier) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -67,7 +68,7 @@ public class SupplierDAO extends AbstractJDBC implements ISupplierDAO {
             c = getCp().getConnection();
             ps = c.prepareStatement(UPDATE_SUPPLIER, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, supplier.getIndividualId());
-            ps.setInt(2, id);
+            ps.setInt(2, supplier.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.comerce;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.comerce.IProductCartDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.comerce.ProductCart;
+import com.solvd.dataBaseOnlineShop.models.comerce.ProductCart;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -51,10 +51,10 @@ public class ProductCartDAO extends AbstractJDBC implements IProductCartDAO {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            productCart.setId(rs.getInt("id"));
             productCart.setQuantity(rs.getInt("quantity"));
             productCart.setCartId(rs.getInt("Carts_id"));
             productCart.setProductId(rs.getInt("Products_id"));
-
         } catch (SQLException e) {
             logger.error("SQLException trying to get productCart by ID: ", e);
         }finally {
@@ -64,7 +64,7 @@ public class ProductCartDAO extends AbstractJDBC implements IProductCartDAO {
     }
 
     @Override
-    public void update(ProductCart productCart, int id) {
+    public void update(ProductCart productCart) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -74,7 +74,7 @@ public class ProductCartDAO extends AbstractJDBC implements IProductCartDAO {
             ps.setInt(1, productCart.getQuantity());
             ps.setInt(2, productCart.getCartId());
             ps.setInt(3, productCart.getProductId());
-            ps.setInt(4, id);
+            ps.setInt(4, productCart.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

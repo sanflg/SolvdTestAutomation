@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.location;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.location.IStateDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.location.State;
+import com.solvd.dataBaseOnlineShop.models.location.State;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -50,6 +50,7 @@ public class StateDAO extends AbstractJDBC implements IStateDAO {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            state.setId(rs.getInt("id"));
             state.setName(rs.getString("name"));
             state.setCountryId(rs.getInt("Countries_id"));
 
@@ -62,7 +63,7 @@ public class StateDAO extends AbstractJDBC implements IStateDAO {
     }
 
     @Override
-    public void update(State state, int id) {
+    public void update(State state) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -71,7 +72,7 @@ public class StateDAO extends AbstractJDBC implements IStateDAO {
             ps = c.prepareStatement(UPDATE_STATE, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, state.getName());
             ps.setInt(2, state.getCountry());
-            ps.setInt(3, id);
+            ps.setInt(3, state.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

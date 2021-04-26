@@ -1,0 +1,799 @@
+<tables>
+	<addresses>
+		<address>
+			<id>1</id>
+			<name>Avenida Siempre Viva</name>
+			<Cities_id>4</Cities_id>
+		</address>
+
+		<address>
+			<id>2</id>
+			<name>Torfyanoy Pereulok</name>
+			<Cities_id>13</Cities_id>
+		</address>
+
+		<address>
+			<id>3</id>
+			<name>Narodnaja vulica</name>
+			<Cities_id>15</Cities_id>
+		</address>
+
+		<address>
+			<id>4</id>
+			<name>Juan B. Justo</name>
+			<Cities_id>29</Cities_id>
+		</address>
+
+		<address>
+			<id>5</id>
+			<name>Mexico</name>
+			<Cities_id>34</Cities_id>
+		</address>
+	</addresses>
+
+	<carts>
+		<cart>
+			<id>1</id>
+			<Individuals_id>1</Individuals_id>
+		</cart>
+
+		<cart>
+			<id>2</id>
+			<Individuals_id>2</Individuals_id>
+		</cart>
+
+		<cart>
+			<id>3</id>
+			<Individuals_id>3</Individuals_id>
+		</cart>
+
+		<cart>
+			<id>4</id>
+			<Individuals_id>4</Individuals_id>
+		</cart>
+
+		<cart>
+			<id>5</id>
+			<Individuals_id>5</Individuals_id>
+		</cart>
+
+		<cart>
+			<id>6</id>
+			<Individuals_id>6</Individuals_id>
+		</cart>
+	</carts>
+
+	<categories>
+		<categiry>
+			<id>1</id>
+			<name>Food</name>
+		</categiry>
+
+		<categiry>
+			<id>2</id>
+			<name>Games</name>
+		</categiry>
+
+		<categiry>
+			<id>3</id>
+			<name>Tecnology</name>
+		</categiry>
+
+		<categiry>
+			<id>4</id>
+			<name>House</name>
+		</categiry>
+	</categories>
+
+	<cities>
+		<city>
+			<id>1</id>
+			<name>Birmingham</name>
+			<States_id>1</States_id>
+		</city>
+
+		<city>
+			<id>2</id>
+			<name>Huntsville</name>
+			<States_id>1</States_id>
+		</city>
+
+		<city>
+			<id>3</id>
+			<name>Phoenix</name>
+			<States_id>2</States_id>
+		</city>
+
+		<city>
+			<id>4</id>
+			<name>Tucson</name>
+			<States_id>2</States_id>
+		</city>
+
+		<city>
+			<id>5</id>
+			<name>Los Angeles</name>
+			<States_id>3</States_id>
+		</city>
+
+		<city>
+			<id>6</id>
+			<name>San Francisco</name>
+			<States_id>3</States_id>
+		</city>
+
+		<city>
+			<id>7</id>
+			<name>Jacksonville</name>
+			<States_id>4</States_id>
+		</city>
+
+		<city>
+			<id>8</id>
+			<name>Miami</name>
+			<States_id>4</States_id>
+		</city>
+
+		<city>
+			<id>9</id>
+			<name>Boise</name>
+			<States_id>5</States_id>
+		</city>
+
+		<city>
+			<id>10</id>
+			<name>Meridian</name>
+			<States_id>5</States_id>
+		</city>
+
+		<city>
+			<id>11</id>
+			<name>Indianapolis</name>
+			<States_id>6</States_id>
+		</city>
+
+		<city>
+			<id>12</id>
+			<name>Fort Wayne</name>
+			<States_id>6</States_id>
+		</city>
+
+		<city>
+			<id>13</id>
+			<name>Brest</name>
+			<States_id>7</States_id>
+		</city>
+
+		<city>
+			<id>14</id>
+			<name>Baranavichy</name>
+			<States_id>7</States_id>
+		</city>
+
+		<city>
+			<id>15</id>
+			<name>Gomel</name>
+			<States_id>8</States_id>
+		</city>
+
+		<city>
+			<id>16</id>
+			<name>Mazyr</name>
+			<States_id>8</States_id>
+		</city>
+
+		<city>
+			<id>17</id>
+			<name>Grodno</name>
+			<States_id>9</States_id>
+		</city>
+
+		<city>
+			<id>18</id>
+			<name>Lida</name>
+			<States_id>9</States_id>
+		</city>
+
+		<city>
+			<id>19</id>
+			<name>Mogilev</name>
+			<States_id>10</States_id>
+		</city>
+
+		<city>
+			<id>20</id>
+			<name>Babruysk</name>
+			<States_id>10</States_id>
+		</city>
+
+		<city>
+			<id>21</id>
+			<name>Barysaw</name>
+			<States_id>11</States_id>
+		</city>
+
+		<city>
+			<id>22</id>
+			<name>Salihorsk</name>
+			<States_id>11</States_id>
+		</city>
+
+		<city>
+			<id>23</id>
+			<name>Vitebsk</name>
+			<States_id>12</States_id>
+		</city>
+
+		<city>
+			<id>24</id>
+			<name>Orsha</name>
+			<States_id>12</States_id>
+		</city>
+
+		<city>
+			<id>25</id>
+			<name>La Plata</name>
+			<States_id>13</States_id>
+		</city>
+
+		<city>
+			<id>26</id>
+			<name>Merlo</name>
+			<States_id>13</States_id>
+		</city>
+
+		<city>
+			<id>27</id>
+			<name>Cordoba</name>
+			<States_id>14</States_id>
+		</city>
+
+		<city>
+			<id>28</id>
+			<name>Carlos Paz</name>
+			<States_id>14</States_id>
+		</city>
+
+		<city>
+			<id>29</id>
+			<name>Resistencia</name>
+			<States_id>15</States_id>
+		</city>
+
+		<city>
+			<id>30</id>
+			<name>Fontana</name>
+			<States_id>15</States_id>
+		</city>
+
+		<city>
+			<id>31</id>
+			<name>Corrientes</name>
+			<States_id>16</States_id>
+		</city>
+
+		<city>
+			<id>32</id>
+			<name>Santa Ana</name>
+			<States_id>16</States_id>
+		</city>
+
+		<city>
+			<id>33</id>
+			<name>Posadas</name>
+			<States_id>17</States_id>
+		</city>
+
+		<city>
+			<id>34</id>
+			<name>Obera</name>
+			<States_id>17</States_id>
+		</city>
+	</cities>
+
+	<countries>
+		<country>
+			<id>1</id>
+			<name>United States</name>
+			<tag>US</tag>
+		</country>
+
+		<country>
+			<id>2</id>
+			<name>Belarus</name>
+			<tag>BY</tag>
+		</country>
+
+		<country>
+			<id>3</id>
+			<name>Argentina</name>
+			<tag>AR</tag>
+		</country>
+	</countries>
+
+	<currencies>
+		<currency>
+			<id>1</id>
+			<name>Dollar</name>
+			<tag>USD</tag>
+		</currency>
+
+		<currency>
+			<id>2</id>
+			<name>Ruble</name>
+			<tag>BYR</tag>
+		</currency>
+
+		<currency>
+			<id>3</id>
+			<name>Peso</name>
+			<tag>ARS</tag>
+		</currency>
+	</currencies>
+
+	<individualaddresses>
+		<individualaddress>
+			<id>1</id>
+			<number>1512</number>
+			<Addresses_id>1</Addresses_id>
+			<Individuals_id>1</Individuals_id>
+		</individualaddress>
+
+		<individualaddress>
+			<id>2</id>
+			<number>162</number>
+			<Addresses_id>1</Addresses_id>
+			<Individuals_id>2</Individuals_id>
+		</individualaddress>
+
+		<individualaddress>
+			<id>3</id>
+			<number>915</number>
+			<Addresses_id>2</Addresses_id>
+			<Individuals_id>3</Individuals_id>
+		</individualaddress>
+
+		<individualaddress>
+			<id>4</id>
+			<number>519</number>
+			<Addresses_id>3</Addresses_id>
+			<Individuals_id>4</Individuals_id>
+		</individualaddress>
+
+		<individualaddress>
+			<id>5</id>
+			<number>19</number>
+			<Addresses_id>4</Addresses_id>
+			<Individuals_id>5</Individuals_id>
+		</individualaddress>
+
+		<individualaddress>
+			<id>6</id>
+			<number>2621</number>
+			<Addresses_id>5</Addresses_id>
+			<Individuals_id>6</Individuals_id>
+		</individualaddress>
+	</individualaddresses>
+
+	<individuals>
+		<individual>
+			<id>1</id>
+			<username>Juan2mvo</username>
+			<password>123123</password>
+			<email>Juan@gmail.com</email>
+			<first_name>Juan</first_name>
+			<last_name>Perez</last_name>
+			<birth_date>1996-08-13</birth_date>
+			<Languages_id>3</Languages_id>
+		</individual>
+
+		<individual>
+			<id>2</id>
+			<username>Pepepepe</username>
+			<password>asdasd</password>
+			<email>Pepitox@gmail.com</email>
+			<first_name>Pepe</first_name>
+			<last_name>Ramirez</last_name>
+			<birth_date>1982-08-13</birth_date>
+			<Languages_id>3</Languages_id>
+		</individual>
+
+		<individual>
+			<id>3</id>
+			<username>JoJo</username>
+			<password>Isthisareference?</password>
+			<email>JoJo@gmail.com</email>
+			<first_name>Jonathan</first_name>
+			<last_name>Joestar</last_name>
+			<birth_date>1835-04-15</birth_date>
+			<Languages_id>1</Languages_id>
+		</individual>
+
+		<individual>
+			<id>4</id>
+			<username>JoJo2</username>
+			<password>Isthisareference?</password>
+			<email>Jojo2@gmail.com</email>
+			<first_name>Joseph</first_name>
+			<last_name>Joestar</last_name>
+			<birth_date>1935-01-27</birth_date>
+			<Languages_id>1</Languages_id>
+		</individual>
+
+		<individual>
+			<id>5</id>
+			<username>Darya2512</username>
+			<password>Jask25jL.s.aj2</password>
+			<email>Darya@gmail.com</email>
+			<first_name>Darya</first_name>
+			<last_name>Azarenka</last_name>
+			<birth_date>2000-12-03</birth_date>
+			<Languages_id>2</Languages_id>
+		</individual>
+
+		<individual>
+			<id>6</id>
+			<username>Ivannnn</username>
+			<password>aslK)#(3kfqpx.</password>
+			<email>Ivan@gmail.com</email>
+			<first_name>Ivan</first_name>
+			<last_name>Kavalski</last_name>
+			<birth_date>1992-09-13</birth_date>
+			<Languages_id>2</Languages_id>
+		</individual>
+	</individuals>
+
+	<individualstatuses>
+		<individualstatus>
+			<id>1</id>
+			<IsAdmin>1</IsAdmin>
+			<IsNew>1</IsNew>
+			<IsBanned>0</IsBanned>
+			<Individuals_id>1</Individuals_id>
+		</individualstatus>
+
+		<individualstatus>
+			<id>2</id>
+			<IsAdmin>0</IsAdmin>
+			<IsNew>0</IsNew>
+			<IsBanned>1</IsBanned>
+			<Individuals_id>2</Individuals_id>
+		</individualstatus>
+
+		<individualstatus>
+			<id>3</id>
+			<IsAdmin>0</IsAdmin>
+			<IsNew>0</IsNew>
+			<IsBanned>0</IsBanned>
+			<Individuals_id>3</Individuals_id>
+		</individualstatus>
+
+		<individualstatus>
+			<id>4</id>
+			<IsAdmin>0</IsAdmin>
+			<IsNew>1</IsNew>
+			<IsBanned>0</IsBanned>
+			<Individuals_id>4</Individuals_id>
+		</individualstatus>
+
+		<individualstatus>
+			<id>5</id>
+			<IsAdmin>1</IsAdmin>
+			<IsNew>1</IsNew>
+			<IsBanned>0</IsBanned>
+			<Individuals_id>5</Individuals_id>
+		</individualstatus>
+
+		<individualstatus>
+			<id>6</id>
+			<IsAdmin>0</IsAdmin>
+			<IsNew>0</IsNew>
+			<IsBanned>0</IsBanned>
+			<Individuals_id>6</Individuals_id>
+		</individualstatus>
+	</individualstatuses>
+
+	<languages>
+		<language>
+			<id>1</id>
+			<name>English</name>
+			<tag>ENG</tag>
+		</language>
+
+		<language>
+			<id>2</id>
+			<name>Belarusian</name>
+			<tag>BEL</tag>
+		</language>
+
+		<language>
+			<id>3</id>
+			<name>Spanish</name>
+			<tag>SPA</tag>
+		</language>
+	</languages>
+
+	<orders>
+	</orders>
+
+	<phonenumbers>
+		<phonenumber>
+			<id>1</id>
+			<number>31151231</number>
+			<Individuals_id>1</Individuals_id>
+		</phonenumber>
+
+		<phonenumber>
+			<id>2</id>
+			<number>85182931</number>
+			<Individuals_id>2</Individuals_id>
+		</phonenumber>
+
+		<phonenumber>
+			<id>3</id>
+			<number>96910236</number>
+			<Individuals_id>3</Individuals_id>
+		</phonenumber>
+
+		<phonenumber>
+			<id>4</id>
+			<number>1069122</number>
+			<Individuals_id>4</Individuals_id>
+		</phonenumber>
+
+		<phonenumber>
+			<id>5</id>
+			<number>105192</number>
+			<Individuals_id>5</Individuals_id>
+		</phonenumber>
+
+		<phonenumber>
+			<id>6</id>
+			<number>68190239</number>
+			<Individuals_id>6</Individuals_id>
+		</phonenumber>
+	</phonenumbers>
+
+	<productorders>
+	</productorders>
+
+	<products>
+		<product>
+			<idProducts>1</idProducts>
+			<name>Lettuce</name>
+			<price>1.25</price>
+			<description>NULL</description>
+			<Suppliers_id>2</Suppliers_id>
+			<Currencies_id>3</Currencies_id>
+			<Categories_id>1</Categories_id>
+		</product>
+
+		<product>
+			<idProducts>2</idProducts>
+			<name>Pork</name>
+			<price>3.15</price>
+			<description>NULL</description>
+			<Suppliers_id>2</Suppliers_id>
+			<Currencies_id>2</Currencies_id>
+			<Categories_id>1</Categories_id>
+		</product>
+
+		<product>
+			<idProducts>3</idProducts>
+			<name>Minecraft</name>
+			<price>25.99</price>
+			<description>NULL</description>
+			<Suppliers_id>3</Suppliers_id>
+			<Currencies_id>3</Currencies_id>
+			<Categories_id>2</Categories_id>
+		</product>
+
+		<product>
+			<idProducts>4</idProducts>
+			<name>Inmost</name>
+			<price>10</price>
+			<description>NULL</description>
+			<Suppliers_id>3</Suppliers_id>
+			<Currencies_id>1</Currencies_id>
+			<Categories_id>3</Categories_id>
+		</product>
+
+		<product>
+			<idProducts>5</idProducts>
+			<name>Cooler</name>
+			<price>7.1</price>
+			<description>NULL</description>
+			<Suppliers_id>3</Suppliers_id>
+			<Currencies_id>2</Currencies_id>
+			<Categories_id>3</Categories_id>
+		</product>
+
+		<product>
+			<idProducts>6</idProducts>
+			<name>PC</name>
+			<price>150</price>
+			<description>NULL</description>
+			<Suppliers_id>3</Suppliers_id>
+			<Currencies_id>2</Currencies_id>
+			<Categories_id>3</Categories_id>
+		</product>
+
+		<product>
+			<idProducts>7</idProducts>
+			<name>Chair</name>
+			<price>15.5</price>
+			<description>NULL</description>
+			<Suppliers_id>1</Suppliers_id>
+			<Currencies_id>1</Currencies_id>
+			<Categories_id>4</Categories_id>
+		</product>
+
+		<product>
+			<idProducts>8</idProducts>
+			<name>Table</name>
+			<price>25.5</price>
+			<description>NULL</description>
+			<Suppliers_id>1</Suppliers_id>
+			<Currencies_id>3</Currencies_id>
+			<Categories_id>4</Categories_id>
+		</product>
+	</products>
+
+	<productcarts>
+		<productcart>
+			<id>1</id>
+			<quantity>1</quantity>
+			<Carts_id>3</Carts_id>
+			<Products_id>3</Products_id>
+		</productcart>
+
+		<productcart>
+			<id>2</id>
+			<quantity>2</quantity>
+			<Carts_id>3</Carts_id>
+			<Products_id>1</Products_id>
+		</productcart>
+
+		<productcart>
+			<id>3</id>
+			<quantity>1</quantity>
+			<Carts_id>1</Carts_id>
+			<Products_id>2</Products_id>
+		</productcart>
+
+		<productcart>
+			<id>4</id>
+			<quantity>3</quantity>
+			<Carts_id>2</Carts_id>
+			<Products_id>6</Products_id>
+		</productcart>
+
+		<productcart>
+			<id>5</id>
+			<quantity>1</quantity>
+			<Carts_id>5</Carts_id>
+			<Products_id>4</Products_id>
+		</productcart>
+	</productcarts>
+
+	<states>
+		<state>
+			<id>1</id>
+			<name>Alabama</name>
+			<Countries_id>1</Countries_id>
+		</state>
+
+		<state>
+			<id>2</id>
+			<name>Arizona</name>
+			<Countries_id>1</Countries_id>
+		</state>
+
+		<state>
+			<id>3</id>
+			<name>California</name>
+			<Countries_id>1</Countries_id>
+		</state>
+
+		<state>
+			<id>4</id>
+			<name>Florida</name>
+			<Countries_id>1</Countries_id>
+		</state>
+
+		<state>
+			<id>5</id>
+			<name>Idaho</name>
+			<Countries_id>1</Countries_id>
+		</state>
+
+		<state>
+			<id>6</id>
+			<name>Indiana</name>
+			<Countries_id>1</Countries_id>
+		</state>
+
+		<state>
+			<id>7</id>
+			<name>Brest</name>
+			<Countries_id>2</Countries_id>
+		</state>
+
+		<state>
+			<id>8</id>
+			<name>Gomel</name>
+			<Countries_id>2</Countries_id>
+		</state>
+
+		<state>
+			<id>9</id>
+			<name>Grodno</name>
+			<Countries_id>2</Countries_id>
+		</state>
+
+		<state>
+			<id>10</id>
+			<name>Mogilev</name>
+			<Countries_id>2</Countries_id>
+		</state>
+
+		<state>
+			<id>11</id>
+			<name>Minsk</name>
+			<Countries_id>2</Countries_id>
+		</state>
+
+		<state>
+			<id>12</id>
+			<name>Vitebsk</name>
+			<Countries_id>2</Countries_id>
+		</state>
+
+		<state>
+			<id>13</id>
+			<name>Buenos Aires</name>
+			<Countries_id>3</Countries_id>
+		</state>
+
+		<state>
+			<id>14</id>
+			<name>Córdoba</name>
+			<Countries_id>3</Countries_id>
+		</state>
+
+		<state>
+			<id>15</id>
+			<name>Chaco</name>
+			<Countries_id>3</Countries_id>
+		</state>
+
+		<state>
+			<id>16</id>
+			<name>Corrientes</name>
+			<Countries_id>3</Countries_id>
+		</state>
+
+		<state>
+			<id>17</id>
+			<name>Misiones</name>
+			<Countries_id>3</Countries_id>
+		</state>
+	</states>
+
+	<suppliers>
+		<supplier>
+			<id>1</id>
+			<Individuals_id>1</Individuals_id>
+		</supplier>
+
+		<supplier>
+			<id>2</id>
+			<Individuals_id>3</Individuals_id>
+		</supplier>
+
+		<supplier>
+			<id>3</id>
+			<Individuals_id>5</Individuals_id>
+		</supplier>
+	</suppliers>
+</tables>

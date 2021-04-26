@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.individual;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.individual.IPhoneNumberDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.individual.PhoneNumber;
+import com.solvd.dataBaseOnlineShop.models.individual.PhoneNumber;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -50,9 +50,9 @@ public class PhoneNumberDAO extends AbstractJDBC implements IPhoneNumberDAO {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            phoneNumber.setId(rs.getInt("id"));
             phoneNumber.setNumber(rs.getInt("number"));
             phoneNumber.setIndividualId(rs.getInt("Individuals_id"));
-
         } catch (SQLException e) {
             logger.error("SQLException trying to get phoneNumber by ID: ", e);
         }finally {
@@ -62,7 +62,7 @@ public class PhoneNumberDAO extends AbstractJDBC implements IPhoneNumberDAO {
     }
 
     @Override
-    public void update(PhoneNumber phoneNumber, int id) {
+    public void update(PhoneNumber phoneNumber) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -71,7 +71,7 @@ public class PhoneNumberDAO extends AbstractJDBC implements IPhoneNumberDAO {
             ps = c.prepareStatement(UPDATE_PHONENUMBER, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, phoneNumber.getNumber());
             ps.setInt(2, phoneNumber.getIndividualId());
-            ps.setInt(3, id);
+            ps.setInt(3, phoneNumber.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

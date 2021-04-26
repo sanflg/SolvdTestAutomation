@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.location;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.location.ICityDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.location.City;
+import com.solvd.dataBaseOnlineShop.models.location.City;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,19 +20,19 @@ public class CityDAO extends AbstractJDBC implements ICityDAO {
             "DELETE FROM City WHERE id=?";
 
     @Override
-    public void create(City address) {
+    public void create(City city) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         try{
             c = getCp().getConnection();
             ps = c.prepareStatement(CREATE_CITY, Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, address.getName());
-            ps.setInt(2, address.getState());
+            ps.setString(1, city.getName());
+            ps.setInt(2, city.getState());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {
-            logger.error("SQLException trying to create address: ", e);
+            logger.error("SQLException trying to create city: ", e);
         }finally {
             closeResources(c, ps, rs);
         }
@@ -43,39 +43,39 @@ public class CityDAO extends AbstractJDBC implements ICityDAO {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        City address = new City();
+        City city = new City();
         try{
             c = getCp().getConnection();
             ps = c.prepareStatement(GET_CITY_BY_ID, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
-            address.setName(rs.getString("name"));
-            address.setStateId(rs.getInt("States_id"));
-
+            city.setId(rs.getInt("id"));
+            city.setName(rs.getString("name"));
+            city.setStateId(rs.getInt("States_id"));
         } catch (SQLException e) {
-            logger.error("SQLException trying to get address by ID: ", e);
+            logger.error("SQLException trying to get city by ID: ", e);
         }finally {
             closeResources(c, ps, rs);
         }
-        return address;
+        return city;
     }
 
     @Override
-    public void update(City address, int id) {
+    public void update(City city) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         try{
             c = getCp().getConnection();
             ps = c.prepareStatement(UPDATE_CITY, Statement.RETURN_GENERATED_KEYS);
-            ps.setString(1, address.getName());
-            ps.setInt(2, address.getState());
-            ps.setInt(3, id);
+            ps.setString(1, city.getName());
+            ps.setInt(2, city.getState());
+            ps.setInt(3, city.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {
-            logger.error("SQLException trying to update address: ", e);
+            logger.error("SQLException trying to update city: ", e);
         }finally {
             closeResources(c, ps, rs);
         }
@@ -93,7 +93,7 @@ public class CityDAO extends AbstractJDBC implements ICityDAO {
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {
-            logger.error("SQLException trying to delete address: ", e);
+            logger.error("SQLException trying to delete city: ", e);
         }finally {
             closeResources(c, ps, rs);
         }

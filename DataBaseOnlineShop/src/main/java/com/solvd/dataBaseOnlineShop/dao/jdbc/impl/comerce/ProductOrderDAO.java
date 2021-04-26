@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.comerce;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.comerce.IProductOrderDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.comerce.ProductOrder;
+import com.solvd.dataBaseOnlineShop.models.comerce.ProductOrder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -50,9 +50,9 @@ public class ProductOrderDAO extends AbstractJDBC implements IProductOrderDAO {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            productOrder.setId(rs.getInt("id"));
             productOrder.setOrderId(rs.getInt("Orders_id"));
             productOrder.setProductId(rs.getInt("Products_id"));
-
         } catch (SQLException e) {
             logger.error("SQLException trying to get productOrder by ID: ", e);
         }finally {
@@ -62,7 +62,7 @@ public class ProductOrderDAO extends AbstractJDBC implements IProductOrderDAO {
     }
 
     @Override
-    public void update(ProductOrder productOrder, int id) {
+    public void update(ProductOrder productOrder) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -71,7 +71,7 @@ public class ProductOrderDAO extends AbstractJDBC implements IProductOrderDAO {
             ps = c.prepareStatement(UPDATE_PRODUCTORDER, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, productOrder.getOrderId());
             ps.setInt(2, productOrder.getProductId());
-            ps.setInt(3, id);
+            ps.setInt(3, productOrder.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {

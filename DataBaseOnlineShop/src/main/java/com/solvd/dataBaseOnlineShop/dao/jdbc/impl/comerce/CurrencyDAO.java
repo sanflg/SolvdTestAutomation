@@ -2,7 +2,7 @@ package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.comerce;
 
 import com.solvd.dataBaseOnlineShop.dao.interfaces.comerce.ICurrencyDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
-import com.solvd.dataBaseOnlineShop.model.comerce.Currency;
+import com.solvd.dataBaseOnlineShop.models.comerce.Currency;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -50,9 +50,9 @@ public class CurrencyDAO extends AbstractJDBC implements ICurrencyDAO {
             ps.setInt(1, id);
             rs = ps.executeQuery();
             rs.next();
+            currency.setId(rs.getInt("id"));
             currency.setName(rs.getString("name"));
             currency.setTag(rs.getString("tag"));
-
         } catch (SQLException e) {
             logger.error("SQLException trying to get currency by ID: ", e);
         }finally {
@@ -62,7 +62,7 @@ public class CurrencyDAO extends AbstractJDBC implements ICurrencyDAO {
     }
 
     @Override
-    public void update(Currency currency, int id) {
+    public void update(Currency currency) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -71,7 +71,7 @@ public class CurrencyDAO extends AbstractJDBC implements ICurrencyDAO {
             ps = c.prepareStatement(UPDATE_CURRENCY, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, currency.getName());
             ps.setString(2, currency.getTag());
-            ps.setInt(3, id);
+            ps.setInt(3, currency.getId());
             rs = ps.executeQuery();
             rs.next();
         } catch (SQLException e) {
