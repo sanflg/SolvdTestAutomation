@@ -48,5 +48,4 @@ public class ConnectionPool {
         connections = new LinkedBlockingQueue<Connection>(POOL_SIZE);
         connectionNumber = 0;
     }
-
 }

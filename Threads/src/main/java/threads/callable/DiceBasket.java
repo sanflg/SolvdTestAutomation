@@ -8,10 +8,10 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public class DiceBasket {
     private static final Logger logger = LogManager.getLogger(DiceBasket.class);
-    private int count = 0;
-    private static DiceBasket basket;
     private final int POOL_SIZE = 5;
+    private static DiceBasket basket;
     private BlockingQueue<Dice> dices = new LinkedBlockingQueue<>(POOL_SIZE);
+    private int count = 0;
 
     private DiceBasket() {
     }

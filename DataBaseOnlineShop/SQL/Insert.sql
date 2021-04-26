@@ -80,7 +80,6 @@ INSERT INTO Currencies (name, tag) VALUES ('Dollar', 'USD');
 INSERT INTO Currencies (name, tag) VALUES ('Ruble', 'BYR');
 INSERT INTO Currencies (name, tag) VALUES ('Peso', 'ARS');
 
-#IndividualStatus and Carts are created using Individuals Triggers (After creating new Individual)
 INSERT INTO Individuals (username, password, email, first_name, last_name, birth_date, languages_id)
 	VALUES ('Juan2mvo', '123123', 'Juan@gmail.com', 'Juan', 'Perez', '1996-08-13', 3);
 INSERT INTO Individuals (username, password, email, first_name, last_name, birth_date, languages_id)
@@ -93,6 +92,20 @@ INSERT INTO Individuals (username, password, email, first_name, last_name, birth
 	VALUES ('Darya2512', 'Jask25jL.s.aj2', 'Darya@gmail.com' ,'Darya', 'Azarenka', '2000-12-03', 2);
 INSERT INTO Individuals (username, password, email, first_name, last_name, birth_date, languages_id)
 	VALUES ('Ivannnn', 'aslK)#(3kfqpx.', 'Ivan@gmail.com' ,'Ivan', 'Kavalski', '1992-09-13', 2);
+    
+INSERT INTO Carts (Individuals_id) VALUES (1);
+INSERT INTO Carts (Individuals_id) VALUES (2);
+INSERT INTO Carts (Individuals_id) VALUES (3);
+INSERT INTO Carts (Individuals_id) VALUES (4);
+INSERT INTO Carts (Individuals_id) VALUES (5);
+INSERT INTO Carts (Individuals_id) VALUES (6);
+
+INSERT INTO IndividualStatus (IsAdmin, IsNew, IsBanned, Individuals_id) VALUES (1, 1, 0, 1);
+INSERT INTO IndividualStatus (IsAdmin, IsNew, IsBanned, Individuals_id) VALUES (0, 0, 1, 2);
+INSERT INTO IndividualStatus (IsAdmin, IsNew, IsBanned, Individuals_id) VALUES (0, 0, 0, 3);
+INSERT INTO IndividualStatus (IsAdmin, IsNew, IsBanned, Individuals_id) VALUES (0, 1, 0, 4);
+INSERT INTO IndividualStatus (IsAdmin, IsNew, IsBanned, Individuals_id) VALUES (1, 1, 0, 5);
+INSERT INTO IndividualStatus (IsAdmin, IsNew, IsBanned, Individuals_id) VALUES (0, 0, 0, 6);
 
 INSERT INTO IndividualAdresses (number, Adresses_id, Individuals_id) VALUES (1512, 1, 1);
 INSERT INTO IndividualAdresses (number, Adresses_id, Individuals_id) VALUES (162, 1, 2);
