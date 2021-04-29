@@ -1,0 +1,17 @@
+<productorders>
+
+	<productorder id="1">
+		<Orders_id>1</Orders_id>
+		<Products_id>2</Products_id>
+	</productorder>
+
+	<productorder id="2">
+		<Orders_id>1</Orders_id>
+		<Products_id>1</Products_id>
+	</productorder>
+
+	<productorder id="3">
+		<Orders_id>1</Orders_id>
+		<Products_id>5</Products_id>
+	</productorder>
+</productorders>

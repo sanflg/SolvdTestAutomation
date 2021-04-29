@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<categories>
+    <FILE>src\main\resources\xml\categories.xml</FILE>
+    <category id="123">
+        <name>aasdasd</name>
+    </category>
+    <category id="999">
+        <name>akjsdjkaskjdaskj</name>
+    </category>
+</categories>

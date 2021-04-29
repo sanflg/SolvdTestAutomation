@@ -1,0 +1,38 @@
+<individualaddresses>
+
+	<individualaddress id="1">
+		<number>1512</number>
+		<Addresses_id>1</Addresses_id>
+		<Individuals_id>1</Individuals_id>
+	</individualaddress>
+
+	<individualaddress id="2">
+		<number>162</number>
+		<Addresses_id>1</Addresses_id>
+		<Individuals_id>2</Individuals_id>
+	</individualaddress>
+
+	<individualaddress id="3">
+		<number>915</number>
+		<Addresses_id>2</Addresses_id>
+		<Individuals_id>3</Individuals_id>
+	</individualaddress>
+
+	<individualaddress id="4">
+		<number>519</number>
+		<Addresses_id>3</Addresses_id>
+		<Individuals_id>4</Individuals_id>
+	</individualaddress>
+
+	<individualaddress id="5">
+		<number>19</number>
+		<Addresses_id>4</Addresses_id>
+		<Individuals_id>5</Individuals_id>
+	</individualaddress>
+
+	<individualaddress id="6">
+		<number>2621</number>
+		<Addresses_id>5</Addresses_id>
+		<Individuals_id>6</Individuals_id>
+	</individualaddress>
+</individualaddresses>

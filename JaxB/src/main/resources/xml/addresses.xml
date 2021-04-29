@@ -1,0 +1,27 @@
+<addresses>
+
+	<addres id="1">
+		<name>Avenida Siempre Viva</name>
+		<Cities_id>4</Cities_id>
+	</addres>
+
+	<addres id="2">
+		<name>Torfyanoy Pereulok</name>
+		<Cities_id>13</Cities_id>
+	</addres>
+
+	<addres id="3">
+		<name>Narodnaja vulica</name>
+		<Cities_id>15</Cities_id>
+	</addres>
+
+	<addres id="4">
+		<name>Juan B. Justo</name>
+		<Cities_id>29</Cities_id>
+	</addres>
+
+	<addres id="5">
+		<name>Mexico</name>
+		<Cities_id>34</Cities_id>
+	</addres>
+</addresses>

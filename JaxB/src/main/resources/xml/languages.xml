@@ -1,0 +1,17 @@
+<languages>
+
+	<language id="1">
+		<name>English</name>
+		<tag>ENG</tag>
+	</language>
+
+	<language id="2">
+		<name>Belarusian</name>
+		<tag>BEL</tag>
+	</language>
+
+	<language id="3">
+		<name>Spanish</name>
+		<tag>SPA</tag>
+	</language>
+</languages>

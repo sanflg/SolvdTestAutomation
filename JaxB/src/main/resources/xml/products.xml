@@ -1,0 +1,74 @@
+<products>
+
+	<product id="1">
+		<name>Lettuce</name>
+		<price>1.25</price>
+		<description>NULL</description>
+		<Suppliers_id>2</Suppliers_id>
+		<Currencies_id>3</Currencies_id>
+		<Categories_id>1</Categories_id>
+	</product>
+
+	<product id="2">
+		<name>Pork</name>
+		<price>3.15</price>
+		<description>NULL</description>
+		<Suppliers_id>2</Suppliers_id>
+		<Currencies_id>2</Currencies_id>
+		<Categories_id>1</Categories_id>
+	</product>
+
+	<product id="3">
+		<name>Minecraft</name>
+		<price>25.99</price>
+		<description>NULL</description>
+		<Suppliers_id>3</Suppliers_id>
+		<Currencies_id>3</Currencies_id>
+		<Categories_id>2</Categories_id>
+	</product>
+
+	<product id="4">
+		<name>Inmost</name>
+		<price>10</price>
+		<description>NULL</description>
+		<Suppliers_id>3</Suppliers_id>
+		<Currencies_id>1</Currencies_id>
+		<Categories_id>3</Categories_id>
+	</product>
+
+	<product id="5">
+		<name>Cooler</name>
+		<price>7.1</price>
+		<description>NULL</description>
+		<Suppliers_id>3</Suppliers_id>
+		<Currencies_id>2</Currencies_id>
+		<Categories_id>3</Categories_id>
+	</product>
+
+	<product id="6">
+		<name>PC</name>
+		<price>150</price>
+		<description>NULL</description>
+		<Suppliers_id>3</Suppliers_id>
+		<Currencies_id>2</Currencies_id>
+		<Categories_id>3</Categories_id>
+	</product>
+
+	<product id="7">
+		<name>Chair</name>
+		<price>15.5</price>
+		<description>NULL</description>
+		<Suppliers_id>1</Suppliers_id>
+		<Currencies_id>1</Currencies_id>
+		<Categories_id>4</Categories_id>
+	</product>
+
+	<product id="8">
+		<name>Table</name>
+		<price>25.5</price>
+		<description>NULL</description>
+		<Suppliers_id>1</Suppliers_id>
+		<Currencies_id>3</Currencies_id>
+		<Categories_id>4</Categories_id>
+	</product>
+</products>

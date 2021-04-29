@@ -1,0 +1,172 @@
+<cities>
+
+	<city id="1">
+		<name>Birmingham</name>
+		<States_id>1</States_id>
+	</city>
+
+	<city id="2">
+		<name>Huntsville</name>
+		<States_id>1</States_id>
+	</city>
+
+	<city id="3">
+		<name>Phoenix</name>
+		<States_id>2</States_id>
+	</city>
+
+	<city id="4">
+		<name>Tucson</name>
+		<States_id>2</States_id>
+	</city>
+
+	<city id="5">
+		<name>Los Angeles</name>
+		<States_id>3</States_id>
+	</city>
+
+	<city id="6">
+		<name>San Francisco</name>
+		<States_id>3</States_id>
+	</city>
+
+	<city id="7">
+		<name>Jacksonville</name>
+		<States_id>4</States_id>
+	</city>
+
+	<city id="8">
+		<name>Miami</name>
+		<States_id>4</States_id>
+	</city>
+
+	<city id="9">
+		<name>Boise</name>
+		<States_id>5</States_id>
+	</city>
+
+	<city id="10">
+		<name>Meridian</name>
+		<States_id>5</States_id>
+	</city>
+
+	<city id="11">
+		<name>Indianapolis</name>
+		<States_id>6</States_id>
+	</city>
+
+	<city id="12">
+		<name>Fort Wayne</name>
+		<States_id>6</States_id>
+	</city>
+
+	<city id="13">
+		<name>Brest</name>
+		<States_id>7</States_id>
+	</city>
+
+	<city id="14">
+		<name>Baranavichy</name>
+		<States_id>7</States_id>
+	</city>
+
+	<city id="15">
+		<name>Gomel</name>
+		<States_id>8</States_id>
+	</city>
+
+	<city id="16">
+		<name>Mazyr</name>
+		<States_id>8</States_id>
+	</city>
+
+	<city id="17">
+		<name>Grodno</name>
+		<States_id>9</States_id>
+	</city>
+
+	<city id="18">
+		<name>Lida</name>
+		<States_id>9</States_id>
+	</city>
+
+	<city id="19">
+		<name>Mogilev</name>
+		<States_id>10</States_id>
+	</city>
+
+	<city id="20">
+		<name>Babruysk</name>
+		<States_id>10</States_id>
+	</city>
+
+	<city id="21">
+		<name>Barysaw</name>
+		<States_id>11</States_id>
+	</city>
+
+	<city id="22">
+		<name>Salihorsk</name>
+		<States_id>11</States_id>
+	</city>
+
+	<city id="23">
+		<name>Vitebsk</name>
+		<States_id>12</States_id>
+	</city>
+
+	<city id="24">
+		<name>Orsha</name>
+		<States_id>12</States_id>
+	</city>
+
+	<city id="25">
+		<name>La Plata</name>
+		<States_id>13</States_id>
+	</city>
+
+	<city id="26">
+		<name>Merlo</name>
+		<States_id>13</States_id>
+	</city>
+
+	<city id="27">
+		<name>Cordoba</name>
+		<States_id>14</States_id>
+	</city>
+
+	<city id="28">
+		<name>Carlos Paz</name>
+		<States_id>14</States_id>
+	</city>
+
+	<city id="29">
+		<name>Resistencia</name>
+		<States_id>15</States_id>
+	</city>
+
+	<city id="30">
+		<name>Fontana</name>
+		<States_id>15</States_id>
+	</city>
+
+	<city id="31">
+		<name>Corrientes</name>
+		<States_id>16</States_id>
+	</city>
+
+	<city id="32">
+		<name>Santa Ana</name>
+		<States_id>16</States_id>
+	</city>
+
+	<city id="33">
+		<name>Posadas</name>
+		<States_id>17</States_id>
+	</city>
+
+	<city id="34">
+		<name>Obera</name>
+		<States_id>17</States_id>
+	</city>
+</cities>

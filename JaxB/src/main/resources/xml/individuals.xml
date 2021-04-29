@@ -1,0 +1,62 @@
+<individuals>
+
+	<individual id="1">
+		<username>Juan2mvo</username>
+		<password>123123</password>
+		<email>Juan@gmail.com</email>
+		<first_name>Juan</first_name>
+		<last_name>Perez</last_name>
+		<birth_date>1996-08-13</birth_date>
+		<Languages_id>3</Languages_id>
+	</individual>
+
+	<individual id="2">
+		<username>Pepepepe</username>
+		<password>asdasd</password>
+		<email>Pepitox@gmail.com</email>
+		<first_name>Pepe</first_name>
+		<last_name>Ramirez</last_name>
+		<birth_date>1982-08-13</birth_date>
+		<Languages_id>3</Languages_id>
+	</individual>
+
+	<individual id="3">
+		<username>JoJo</username>
+		<password>Isthisareference?</password>
+		<email>JoJo@gmail.com</email>
+		<first_name>Jonathan</first_name>
+		<last_name>Joestar</last_name>
+		<birth_date>1835-04-15</birth_date>
+		<Languages_id>1</Languages_id>
+	</individual>
+
+	<individual id="4">
+		<username>JoJo2</username>
+		<password>Isthisareference?</password>
+		<email>Jojo2@gmail.com</email>
+		<first_name>Joseph</first_name>
+		<last_name>Joestar</last_name>
+		<birth_date>1935-01-27</birth_date>
+		<Languages_id>1</Languages_id>
+	</individual>
+
+	<individual id="5">
+		<username>Darya2512</username>
+		<password>Jask25jL.s.aj2</password>
+		<email>Darya@gmail.com</email>
+		<first_name>Darya</first_name>
+		<last_name>Azarenka</last_name>
+		<birth_date>2000-12-03</birth_date>
+		<Languages_id>2</Languages_id>
+	</individual>
+
+	<individual id="6">
+		<username>Ivannnn</username>
+		<password>aslK)#(3kfqpx.</password>
+		<email>Ivan@gmail.com</email>
+		<first_name>Ivan</first_name>
+		<last_name>Kavalski</last_name>
+		<birth_date>1992-09-13</birth_date>
+		<Languages_id>2</Languages_id>
+	</individual>
+</individuals>

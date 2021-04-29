@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<carts>
+    <FILE>src\main\resources\xml\carts.xml</FILE>
+    <cart id="123">
+        <Individual_id>123</Individual_id>
+    </cart>
+    <cart id="999">
+        <Individual_id>999</Individual_id>
+    </cart>
+</carts>
