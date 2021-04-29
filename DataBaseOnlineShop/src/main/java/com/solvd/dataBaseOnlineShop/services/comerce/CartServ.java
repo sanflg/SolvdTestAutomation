@@ -38,6 +38,4 @@ public class CartServ implements IAbstractServ<Cart> {
         cartDAO.delete(id);
         logger.info("Deleting cart with id " + id);
     }
-
-    public Product[]
 }

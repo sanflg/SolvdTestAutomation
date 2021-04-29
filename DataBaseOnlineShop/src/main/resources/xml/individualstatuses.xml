@@ -1,0 +1,44 @@
+<individualstatuses>
+
+	<individualstatus id="1">
+		<IsAdmin>1</IsAdmin>
+		<IsNew>1</IsNew>
+		<IsBanned>0</IsBanned>
+		<Individuals_id>1</Individuals_id>
+	</individualstatus>
+
+	<individualstatus id="2">
+		<IsAdmin>0</IsAdmin>
+		<IsNew>0</IsNew>
+		<IsBanned>1</IsBanned>
+		<Individuals_id>2</Individuals_id>
+	</individualstatus>
+
+	<individualstatus id="3">
+		<IsAdmin>0</IsAdmin>
+		<IsNew>0</IsNew>
+		<IsBanned>0</IsBanned>
+		<Individuals_id>3</Individuals_id>
+	</individualstatus>
+
+	<individualstatus id="4">
+		<IsAdmin>0</IsAdmin>
+		<IsNew>1</IsNew>
+		<IsBanned>0</IsBanned>
+		<Individuals_id>4</Individuals_id>
+	</individualstatus>
+
+	<individualstatus id="5">
+		<IsAdmin>1</IsAdmin>
+		<IsNew>1</IsNew>
+		<IsBanned>0</IsBanned>
+		<Individuals_id>5</Individuals_id>
+	</individualstatus>
+
+	<individualstatus id="6">
+		<IsAdmin>0</IsAdmin>
+		<IsNew>0</IsNew>
+		<IsBanned>0</IsBanned>
+		<Individuals_id>6</Individuals_id>
+	</individualstatus>
+</individualstatuses>

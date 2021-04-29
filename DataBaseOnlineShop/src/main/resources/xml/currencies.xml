@@ -1,0 +1,17 @@
+<currencies>
+
+	<currency id="1">
+		<name>Dollar</name>
+		<tag>USD</tag>
+	</currency>
+
+	<currency id="2">
+		<name>Ruble</name>
+		<tag>BYR</tag>
+	</currency>
+
+	<currency id="3">
+		<name>Peso</name>
+		<tag>ARS</tag>
+	</currency>
+</currencies>

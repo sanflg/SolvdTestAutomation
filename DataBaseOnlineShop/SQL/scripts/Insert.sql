@@ -73,7 +73,7 @@ INSERT INTO Languages (name, tag) VALUES ('Spanish', 'SPA');
 
 INSERT INTO Categories (name) VALUES ('Food');
 INSERT INTO Categories (name) VALUES ('Games');
-INSERT INTO Categories (name) VALUES ('Tecnology');
+INSERT INTO Categories (name) VALUES ('Technology');
 INSERT INTO Categories (name) VALUES ('House');
 
 INSERT INTO Currencies (name, tag) VALUES ('Dollar', 'USD');
@@ -134,8 +134,8 @@ INSERT INTO Products (name, price, categories_id, currencies_id, suppliers_id) V
 INSERT INTO Products (name, price, categories_id, currencies_id, suppliers_id) VALUES ('Chair', 15.50, 4, 1, 1);
 INSERT INTO Products (name, price, categories_id, currencies_id, suppliers_id) VALUES ('Table', 25.50, 4, 3, 1);
 
-INSERT INTO productscarts (Carts_id, quantity, Products_id) VALUES (3, 1, 3);
-INSERT INTO productscarts (Carts_id, quantity, Products_id) VALUES (3, 2, 1);
-INSERT INTO productscarts (Carts_id, quantity, Products_id) VALUES (1, 1, 2);
-INSERT INTO productscarts (Carts_id, quantity, Products_id) VALUES (2, 3, 6);
-INSERT INTO productscarts (Carts_id, quantity, Products_id) VALUES (5, 1, 4);
+INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (3, 1, 3);
+INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (3, 2, 1);
+INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (1, 1, 2);
+INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (2, 3, 6);
+INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (5, 1, 4);

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="individuals">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="individual"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="individual">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="username"/>
+                <xs:element ref="password"/>
+                <xs:element ref="email"/>
+                <xs:element ref="first_name"/>
+                <xs:element ref="last_name"/>
+                <xs:element ref="birth_date"/>
+                <xs:element ref="Languages_id"/>
+            </xs:sequence>
+            <xs:attribute name="id" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="username" type="xs:string"/>
+    <xs:element name="password" type="xs:string"/>
+    <xs:element name="email" type="xs:string"/>
+    <xs:element name="first_name" type="xs:string"/>
+    <xs:element name="last_name" type="xs:string"/>
+    <xs:element name="birth_date" type="xs:NMTOKEN"/>
+    <xs:element name="Languages_id" type="xs:integer"/>
+</xs:schema>

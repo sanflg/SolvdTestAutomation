@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="products">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="product"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="product">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="price"/>
+                <xs:element ref="description"/>
+                <xs:element ref="Suppliers_id"/>
+                <xs:element ref="Currencies_id"/>
+                <xs:element ref="Categories_id"/>
+            </xs:sequence>
+            <xs:attribute name="id" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="price" type="xs:decimal"/>
+    <xs:element name="description" type="xs:string"/>
+    <xs:element name="Suppliers_id" type="xs:integer"/>
+    <xs:element name="Currencies_id" type="xs:integer"/>
+    <xs:element name="Categories_id" type="xs:integer"/>
+</xs:schema>

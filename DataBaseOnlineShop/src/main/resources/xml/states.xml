@@ -1,0 +1,87 @@
+<states>
+
+	<state id="1">
+		<name>Alabama</name>
+		<Countries_id>1</Countries_id>
+	</state>
+
+	<state id="2">
+		<name>Arizona</name>
+		<Countries_id>1</Countries_id>
+	</state>
+
+	<state id="3">
+		<name>California</name>
+		<Countries_id>1</Countries_id>
+	</state>
+
+	<state id="4">
+		<name>Florida</name>
+		<Countries_id>1</Countries_id>
+	</state>
+
+	<state id="5">
+		<name>Idaho</name>
+		<Countries_id>1</Countries_id>
+	</state>
+
+	<state id="6">
+		<name>Indiana</name>
+		<Countries_id>1</Countries_id>
+	</state>
+
+	<state id="7">
+		<name>Brest</name>
+		<Countries_id>2</Countries_id>
+	</state>
+
+	<state id="8">
+		<name>Gomel</name>
+		<Countries_id>2</Countries_id>
+	</state>
+
+	<state id="9">
+		<name>Grodno</name>
+		<Countries_id>2</Countries_id>
+	</state>
+
+	<state id="10">
+		<name>Mogilev</name>
+		<Countries_id>2</Countries_id>
+	</state>
+
+	<state id="11">
+		<name>Minsk</name>
+		<Countries_id>2</Countries_id>
+	</state>
+
+	<state id="12">
+		<name>Vitebsk</name>
+		<Countries_id>2</Countries_id>
+	</state>
+
+	<state id="13">
+		<name>Buenos Aires</name>
+		<Countries_id>3</Countries_id>
+	</state>
+
+	<state id="14">
+		<name>Córdoba</name>
+		<Countries_id>3</Countries_id>
+	</state>
+
+	<state id="15">
+		<name>Chaco</name>
+		<Countries_id>3</Countries_id>
+	</state>
+
+	<state id="16">
+		<name>Corrientes</name>
+		<Countries_id>3</Countries_id>
+	</state>
+
+	<state id="17">
+		<name>Misiones</name>
+		<Countries_id>3</Countries_id>
+	</state>
+</states>

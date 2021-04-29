@@ -1,0 +1,17 @@
+<countries>
+
+	<country id="1">
+		<name>United States</name>
+		<tag>US</tag>
+	</country>
+
+	<country id="2">
+		<name>Belarus</name>
+		<tag>BY</tag>
+	</country>
+
+	<country id="3">
+		<name>Argentina</name>
+		<tag>AR</tag>
+	</country>
+</countries>

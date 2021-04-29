@@ -1,0 +1,18 @@
+<categories>
+
+	<category id="1">
+		<name>Food</name>
+	</category>
+
+	<category id="2">
+		<name>Games</name>
+	</category>
+
+	<category id="3">
+		<name>Technology</name>
+	</category>
+
+	<category id="4">
+		<name>House</name>
+	</category>
+</categories>

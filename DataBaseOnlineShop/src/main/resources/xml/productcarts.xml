@@ -1,0 +1,32 @@
+<productcarts>
+
+	<productcart id="1">
+		<quantity>1</quantity>
+		<Carts_id>3</Carts_id>
+		<Products_id>3</Products_id>
+	</productcart>
+
+	<productcart id="2">
+		<quantity>2</quantity>
+		<Carts_id>3</Carts_id>
+		<Products_id>1</Products_id>
+	</productcart>
+
+	<productcart id="3">
+		<quantity>1</quantity>
+		<Carts_id>1</Carts_id>
+		<Products_id>2</Products_id>
+	</productcart>
+
+	<productcart id="4">
+		<quantity>3</quantity>
+		<Carts_id>2</Carts_id>
+		<Products_id>6</Products_id>
+	</productcart>
+
+	<productcart id="5">
+		<quantity>1</quantity>
+		<Carts_id>5</Carts_id>
+		<Products_id>4</Products_id>
+	</productcart>
+</productcarts>

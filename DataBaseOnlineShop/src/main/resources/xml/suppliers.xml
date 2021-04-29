@@ -1,0 +1,14 @@
+<suppliers>
+
+	<supplier id="1">
+		<Individuals_id>1</Individuals_id>
+	</supplier>
+
+	<supplier id="2">
+		<Individuals_id>3</Individuals_id>
+	</supplier>
+
+	<supplier id="3">
+		<Individuals_id>5</Individuals_id>
+	</supplier>
+</suppliers>
