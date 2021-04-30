@@ -26,15 +26,17 @@ public class ConnectionPool {
         return connectionPool;
     }
 
-    private synchronized void newConnection(){
+    private void newConnection(){
         logger.info("New Connection is being created with connectionNumber: " + connectionNumber);
         connections.add(new Connection(connectionNumber));
         connectionNumber++;
     }
 
     public Connection getConnection() throws InterruptedException {
-        if (connectionNumber < POOL_SIZE){
-            newConnection();
+        synchronized(ConnectionPool.class) {
+            if (connectionNumber < POOL_SIZE) {
+                newConnection();
+            }
         }
         return connections.take();
     }

@@ -2,6 +2,7 @@ package threads.callable;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import threads.runnable.ConnectionPool;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -25,15 +26,17 @@ public class DiceBasket {
         return basket;
     }
 
-    private synchronized void newDice(){
+    private void newDice(){
         logger.info("New dice is being created with connectionNumber: " + count);
         dices.add(new Dice(count));
         count++;
     }
 
     public Dice getDice() throws InterruptedException {
-        if(count < POOL_SIZE){
-            newDice();
+        synchronized(DiceBasket.class) {
+            if (count < POOL_SIZE) {
+                newDice();
+            }
         }
         return dices.take();
     }
