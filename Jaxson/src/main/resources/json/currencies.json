@@ -1,0 +1,17 @@
+[
+      {
+        "id": "1",
+        "name": "Dollar",
+        "tag": "USD"
+      },
+      {
+        "id": "2",
+        "name": "Ruble",
+        "tag": "BYR"
+      },
+      {
+        "id": "3",
+        "name": "Peso",
+        "tag": "ARS"
+      }
+    ]

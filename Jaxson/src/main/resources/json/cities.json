@@ -1,0 +1,172 @@
+[
+      {
+        "id": "1",
+        "name": "Birmingham",
+        "States_id": "1"
+      },
+      {
+        "id": "2",
+        "name": "Huntsville",
+        "States_id": "1"
+      },
+      {
+        "id": "3",
+        "name": "Phoenix",
+        "States_id": "2"
+      },
+      {
+        "id": "4",
+        "name": "Tucson",
+        "States_id": "2"
+      },
+      {
+        "id": "5",
+        "name": "Los Angeles",
+        "States_id": "3"
+      },
+      {
+        "id": "6",
+        "name": "San Francisco",
+        "States_id": "3"
+      },
+      {
+        "id": "7",
+        "name": "Jacksonville",
+        "States_id": "4"
+      },
+      {
+        "id": "8",
+        "name": "Miami",
+        "States_id": "4"
+      },
+      {
+        "id": "9",
+        "name": "Boise",
+        "States_id": "5"
+      },
+      {
+        "id": "10",
+        "name": "Meridian",
+        "States_id": "5"
+      },
+      {
+        "id": "11",
+        "name": "Indianapolis",
+        "States_id": "6"
+      },
+      {
+        "id": "12",
+        "name": "Fort Wayne",
+        "States_id": "6"
+      },
+      {
+        "id": "13",
+        "name": "Brest",
+        "States_id": "7"
+      },
+      {
+        "id": "14",
+        "name": "Baranavichy",
+        "States_id": "7"
+      },
+      {
+        "id": "15",
+        "name": "Gomel",
+        "States_id": "8"
+      },
+      {
+        "id": "16",
+        "name": "Mazyr",
+        "States_id": "8"
+      },
+      {
+        "id": "17",
+        "name": "Grodno",
+        "States_id": "9"
+      },
+      {
+        "id": "18",
+        "name": "Lida",
+        "States_id": "9"
+      },
+      {
+        "id": "19",
+        "name": "Mogilev",
+        "States_id": "10"
+      },
+      {
+        "id": "20",
+        "name": "Babruysk",
+        "States_id": "10"
+      },
+      {
+        "id": "21",
+        "name": "Barysaw",
+        "States_id": "11"
+      },
+      {
+        "id": "22",
+        "name": "Salihorsk",
+        "States_id": "11"
+      },
+      {
+        "id": "23",
+        "name": "Vitebsk",
+        "States_id": "12"
+      },
+      {
+        "id": "24",
+        "name": "Orsha",
+        "States_id": "12"
+      },
+      {
+        "id": "25",
+        "name": "La Plata",
+        "States_id": "13"
+      },
+      {
+        "id": "26",
+        "name": "Merlo",
+        "States_id": "13"
+      },
+      {
+        "id": "27",
+        "name": "Cordoba",
+        "States_id": "14"
+      },
+      {
+        "id": "28",
+        "name": "Carlos Paz",
+        "States_id": "14"
+      },
+      {
+        "id": "29",
+        "name": "Resistencia",
+        "States_id": "15"
+      },
+      {
+        "id": "30",
+        "name": "Fontana",
+        "States_id": "15"
+      },
+      {
+        "id": "31",
+        "name": "Corrientes",
+        "States_id": "16"
+      },
+      {
+        "id": "32",
+        "name": "Santa Ana",
+        "States_id": "16"
+      },
+      {
+        "id": "33",
+        "name": "Posadas",
+        "States_id": "17"
+      },
+      {
+        "id": "34",
+        "name": "Obera",
+        "States_id": "17"
+      }
+    ]

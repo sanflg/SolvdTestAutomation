@@ -1,0 +1,44 @@
+[
+      {
+        "id": "1",
+        "IsAdmin": "1",
+        "IsNew": "1",
+        "IsBanned": "0",
+        "Individuals_id": "1"
+      },
+      {
+        "id": "2",
+        "IsAdmin": "0",
+        "IsNew": "0",
+        "IsBanned": "1",
+        "Individuals_id": "2"
+      },
+      {
+        "id": "3",
+        "IsAdmin": "0",
+        "IsNew": "0",
+        "IsBanned": "0",
+        "Individuals_id": "3"
+      },
+      {
+        "id": "4",
+        "IsAdmin": "0",
+        "IsNew": "1",
+        "IsBanned": "0",
+        "Individuals_id": "4"
+      },
+      {
+        "id": "5",
+        "IsAdmin": "1",
+        "IsNew": "1",
+        "IsBanned": "0",
+        "Individuals_id": "5"
+      },
+      {
+        "id": "6",
+        "IsAdmin": "0",
+        "IsNew": "0",
+        "IsBanned": "0",
+        "Individuals_id": "6"
+      }
+    ]

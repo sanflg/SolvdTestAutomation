@@ -1,0 +1,17 @@
+[
+      {
+        "id": "1",
+        "name": "United States",
+        "tag": "US"
+      },
+      {
+        "id": "2",
+        "name": "Belarus",
+        "tag": "BY"
+      },
+      {
+        "id": "3",
+        "name": "Argentina",
+        "tag": "AR"
+      }
+    ]

@@ -1,0 +1,62 @@
+[
+      {
+        "id": "1",
+        "username": "Juan2mvo",
+        "password": "123123",
+        "email": "Juan@gmail.com",
+        "first_name": "Juan",
+        "last_name": "Perez",
+        "birth_date": "1996-08-13",
+        "Languages_id": "3"
+      },
+      {
+        "id": "2",
+        "username": "Pepepepe",
+        "password": "asdasd",
+        "email": "Pepitox@gmail.com",
+        "first_name": "Pepe",
+        "last_name": "Ramirez",
+        "birth_date": "1982-08-13",
+        "Languages_id": "3"
+      },
+      {
+        "id": "3",
+        "username": "JoJo",
+        "password": "Isthisareference?",
+        "email": "JoJo@gmail.com",
+        "first_name": "Jonathan",
+        "last_name": "Joestar",
+        "birth_date": "1835-04-15",
+        "Languages_id": "1"
+      },
+      {
+        "id": "4",
+        "username": "JoJo2",
+        "password": "Isthisareference?",
+        "email": "Jojo2@gmail.com",
+        "first_name": "Joseph",
+        "last_name": "Joestar",
+        "birth_date": "1935-01-27",
+        "Languages_id": "1"
+      },
+      {
+        "id": "5",
+        "username": "Darya2512",
+        "password": "Jask25jL.s.aj2",
+        "email": "Darya@gmail.com",
+        "first_name": "Darya",
+        "last_name": "Azarenka",
+        "birth_date": "2000-12-03",
+        "Languages_id": "2"
+      },
+      {
+        "id": "6",
+        "username": "Ivannnn",
+        "password": "aslK)#(3kfqpx.",
+        "email": "Ivan@gmail.com",
+        "first_name": "Ivan",
+        "last_name": "Kavalski",
+        "birth_date": "1992-09-13",
+        "Languages_id": "2"
+      }
+    ]

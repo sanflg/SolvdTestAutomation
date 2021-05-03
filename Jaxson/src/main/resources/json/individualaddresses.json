@@ -1,0 +1,38 @@
+[
+      {
+        "id": "1",
+        "number": "1512",
+        "Addresses_id": "1",
+        "Individuals_id": "1"
+      },
+      {
+        "id": "2",
+        "number": "162",
+        "Addresses_id": "1",
+        "Individuals_id": "2"
+      },
+      {
+        "id": "3",
+        "number": "915",
+        "Addresses_id": "2",
+        "Individuals_id": "3"
+      },
+      {
+        "id": "4",
+        "number": "519",
+        "Addresses_id": "3",
+        "Individuals_id": "4"
+      },
+      {
+        "id": "5",
+        "number": "19",
+        "Addresses_id": "4",
+        "Individuals_id": "5"
+      },
+      {
+        "id": "6",
+        "number": "2621",
+        "Addresses_id": "5",
+        "Individuals_id": "6"
+      }
+    ]

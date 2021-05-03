@@ -1,0 +1,87 @@
+[
+      {
+        "id": "1",
+        "name": "Alabama",
+        "Countries_id": "1"
+      },
+      {
+        "id": "2",
+        "name": "Arizona",
+        "Countries_id": "1"
+      },
+      {
+        "id": "3",
+        "name": "California",
+        "Countries_id": "1"
+      },
+      {
+        "id": "4",
+        "name": "Florida",
+        "Countries_id": "1"
+      },
+      {
+        "id": "5",
+        "name": "Idaho",
+        "Countries_id": "1"
+      },
+      {
+        "id": "6",
+        "name": "Indiana",
+        "Countries_id": "1"
+      },
+      {
+        "id": "7",
+        "name": "Brest",
+        "Countries_id": "2"
+      },
+      {
+        "id": "8",
+        "name": "Gomel",
+        "Countries_id": "2"
+      },
+      {
+        "id": "9",
+        "name": "Grodno",
+        "Countries_id": "2"
+      },
+      {
+        "id": "10",
+        "name": "Mogilev",
+        "Countries_id": "2"
+      },
+      {
+        "id": "11",
+        "name": "Minsk",
+        "Countries_id": "2"
+      },
+      {
+        "id": "12",
+        "name": "Vitebsk",
+        "Countries_id": "2"
+      },
+      {
+        "id": "13",
+        "name": "Buenos Aires",
+        "Countries_id": "3"
+      },
+      {
+        "id": "14",
+        "name": "Córdoba",
+        "Countries_id": "3"
+      },
+      {
+        "id": "15",
+        "name": "Chaco",
+        "Countries_id": "3"
+      },
+      {
+        "id": "16",
+        "name": "Corrientes",
+        "Countries_id": "3"
+      },
+      {
+        "id": "17",
+        "name": "Misiones",
+        "Countries_id": "3"
+      }
+    ]

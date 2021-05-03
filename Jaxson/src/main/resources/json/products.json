@@ -1,0 +1,74 @@
+[
+      {
+        "id": "1",
+        "name": "Lettuce",
+        "price": "1.25",
+        "description": "NULL",
+        "Suppliers_id": "2",
+        "Currencies_id": "3",
+        "Categories_id": "1"
+      },
+      {
+        "id": "2",
+        "name": "Pork",
+        "price": "3.15",
+        "description": "NULL",
+        "Suppliers_id": "2",
+        "Currencies_id": "2",
+        "Categories_id": "1"
+      },
+      {
+        "id": "3",
+        "name": "Minecraft",
+        "price": "25.99",
+        "description": "NULL",
+        "Suppliers_id": "3",
+        "Currencies_id": "3",
+        "Categories_id": "2"
+      },
+      {
+        "id": "4",
+        "name": "Inmost",
+        "price": "10",
+        "description": "NULL",
+        "Suppliers_id": "3",
+        "Currencies_id": "1",
+        "Categories_id": "3"
+      },
+      {
+        "id": "5",
+        "name": "Cooler",
+        "price": "7.1",
+        "description": "NULL",
+        "Suppliers_id": "3",
+        "Currencies_id": "2",
+        "Categories_id": "3"
+      },
+      {
+        "id": "6",
+        "name": "PC",
+        "price": "150",
+        "description": "NULL",
+        "Suppliers_id": "3",
+        "Currencies_id": "2",
+        "Categories_id": "3"
+      },
+      {
+        "id": "7",
+        "name": "Chair",
+        "price": "15.5",
+        "description": "NULL",
+        "Suppliers_id": "1",
+        "Currencies_id": "1",
+        "Categories_id": "4"
+      },
+      {
+        "id": "8",
+        "name": "Table",
+        "price": "25.5",
+        "description": "NULL",
+        "Suppliers_id": "1",
+        "Currencies_id": "3",
+        "Categories_id": "4"
+      }
+    ]

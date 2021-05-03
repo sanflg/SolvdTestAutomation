@@ -1,6 +1,6 @@
 package com.solvd.dataBaseOnlineShop.dao.jdbc.impl.individual;
 
-import com.solvd.dataBaseOnlineShop.dao.interfaces.individual.IIndividualStatusesDAO;
+import com.solvd.dataBaseOnlineShop.dao.interfaces.individual.IIndividualStatusDAO;
 import com.solvd.dataBaseOnlineShop.dao.jdbc.AbstractJDBC;
 import com.solvd.dataBaseOnlineShop.models.individual.IndividualStatus;
 import org.apache.logging.log4j.LogManager;
@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.sql.*;
 
-public class IndividualStatusDAO extends AbstractJDBC implements IIndividualStatusesDAO {
+public class IndividualStatusDAO extends AbstractJDBC implements IIndividualStatusDAO {
     private static final Logger logger = LogManager.getLogger(IndividualStatusDAO.class);
     private static final String CREATE_INDIVIDUALSTATUS =
             "INSERT INTO IndividualStatuses (IsAdmin, IsNew, IsBanned, Individuals_id) VALUES (?, ?, ?, ?)";

@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <carts>
-
-    <cart id="1">
-        <Individuals_id>1</Individuals_id>
-    </cart>
-
-    <cart id="2">
-        <Individuals_id>2</Individuals_id>
-    </cart>
-
-    <cart id="3">
-        <Individuals_id>3</Individuals_id>
-    </cart>
-
-    <cart id="4">
-        <Individuals_id>4</Individuals_id>
-    </cart>
-
-    <cart id="5">
-        <Individuals_id>5</Individuals_id>
-    </cart>
-
-    <cart id="6">
-        <Individuals_id>6</Individuals_id>
-    </cart>
+  <cart id="1">
+    <Individuals_id>1</Individuals_id>
+  </cart>
+  <cart id="2">
+    <Individuals_id>2</Individuals_id>
+  </cart>
+  <cart id="3">
+    <Individuals_id>3</Individuals_id>
+  </cart>
+  <cart id="4">
+    <Individuals_id>4</Individuals_id>
+  </cart>
+  <cart id="5">
+    <Individuals_id>5</Individuals_id>
+  </cart>
+  <cart id="6">
+    <Individuals_id>6</Individuals_id>
+  </cart>
 </carts>
