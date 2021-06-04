@@ -139,3 +139,9 @@ INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (3, 2, 1);
 INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (1, 1, 2);
 INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (2, 3, 6);
 INSERT INTO productcarts (Carts_id, quantity, Products_id) VALUES (5, 1, 4);
+
+INSERT INTO orders (Carts_id) VALUES (1);
+
+INSERT INTO productorders(Orders_id, Products_id) VALUES (1, 2);
+INSERT INTO productorders(Orders_id, Products_id) VALUES (1, 1);
+INSERT INTO productorders(Orders_id, Products_id) VALUES (1, 5);
